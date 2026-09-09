@@ -168,13 +168,15 @@ export async function getPersistentItem(key: string): Promise<string | null> {
 }
 
 /**
- * Automatically synchronizes all cloud-stored portfolio assets into the local memory and IndexedDB caches.
+ * Automatically synchronizes all portfolio assets into memory and IndexedDB caches.
+ * First loads from bundled /media-backup.json (for standalone deployments),
+ * then overlays any newer data from Cloud Firestore.
  */
 export async function hydrateFromCloudStorage(): Promise<void> {
-  try {
-    const cloudMedia = await getAllCloudStorage();
-    let hasNew = false;
-    for (const [key, dataUrl] of Object.entries(cloudMedia)) {
+  let hasNew = false;
+
+  const ingestEntries = async (entries: Record<string, string>) => {
+    for (const [key, dataUrl] of Object.entries(entries)) {
       if (dataUrl && typeof dataUrl === 'string') {
         if (!memoryCache.has(key) || memoryCache.get(key) !== dataUrl) {
           memoryCache.set(key, dataUrl);
@@ -190,12 +192,32 @@ export async function hydrateFromCloudStorage(): Promise<void> {
         } catch {}
       }
     }
-    if (hasNew && typeof window !== 'undefined') {
-      window.dispatchEvent(new Event('avatarUpdated'));
-      window.dispatchEvent(new CustomEvent('portfolio_storage_updated', { detail: {} }));
+  };
+
+  // 1. Load from bundled media-backup.json (works on fresh Vercel/standalone deploys)
+  try {
+    const response = await fetch('/media-backup.json');
+    if (response.ok) {
+      const backupData: Record<string, string> = await response.json();
+      if (backupData && typeof backupData === 'object' && Object.keys(backupData).length > 0) {
+        await ingestEntries(backupData);
+      }
     }
   } catch (err) {
+    console.warn('Bundled media backup load note:', err);
+  }
+
+  // 2. Overlay with Cloud Firestore data (if available)
+  try {
+    const cloudMedia = await getAllCloudStorage();
+    await ingestEntries(cloudMedia);
+  } catch (err) {
     console.warn('Cloud hydration note:', err);
+  }
+
+  if (hasNew && typeof window !== 'undefined') {
+    window.dispatchEvent(new Event('avatarUpdated'));
+    window.dispatchEvent(new CustomEvent('portfolio_storage_updated', { detail: {} }));
   }
 }
 

@@ -24,8 +24,5 @@ Thumbs.db
 # Zip archives
 *.zip
 
-# Large media backup (not needed for deployment)
-public/media-backup.json
-
 # Lock files (bun-specific)
 bun.lock
