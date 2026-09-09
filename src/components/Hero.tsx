@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center">
           
           {/* Left Column - Main Copy & CTAs */}
-          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 text-center lg:text-left min-w-0">
+          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 text-center lg:text-left min-w-0 overflow-hidden">
             
             {/* Status Pill Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 backdrop-blur-xl text-blue-600 dark:text-blue-400 text-[11px] uppercase tracking-[0.2em] font-semibold self-center lg:self-start shadow-xl">
@@ -90,10 +90,10 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Name & Main Display Headline */}
-            <div className="min-w-0">
-              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-[clamp(1.75rem,2.4vw,3.25rem)] xl:text-[clamp(2.4rem,3vw,3.75rem)] font-extrabold font-display tracking-tight sm:tracking-tighter text-slate-900 dark:text-white leading-[1.08] sm:leading-[0.98] uppercase">
-                <span className="block whitespace-normal sm:whitespace-nowrap">ANASS GHAZZOU</span>
-                <span className="text-stroke-white block mt-1 whitespace-normal sm:whitespace-nowrap">{t('hero.titleP2')}</span>
+            <div className="min-w-0 relative z-10">
+              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-[clamp(1.75rem,2.4vw,3.25rem)] xl:text-[clamp(2.4rem,3vw,3.75rem)] font-extrabold font-display tracking-tight sm:tracking-tighter text-slate-900 dark:text-white leading-[1.08] sm:leading-[0.98] uppercase break-words">
+                <span className="block">ANASS GHAZZOU</span>
+                <span className="text-stroke-white block mt-1">{t('hero.titleP2')}</span>
               </h1>
               <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-base xl:text-lg font-medium text-blue-600 dark:text-blue-300/90 tracking-wide max-w-xl mx-auto lg:mx-0 leading-relaxed">
                 {t('hero.subtitle')}
