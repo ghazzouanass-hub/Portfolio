@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+coverage/
+
+# Environment
+.env*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Zip archives
+*.zip
+
+# Large media backup (not needed for deployment)
+public/media-backup.json
+
+# Lock files (bun-specific)
+bun.lock

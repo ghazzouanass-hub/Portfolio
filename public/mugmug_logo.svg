@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mugGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="50%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="creamAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#mugGrad)" />
+
+  <!-- Coffee Mug & Insulated Tumbler Graphic -->
+  <g transform="translate(140, 110)">
+    <!-- Main Mug Body -->
+    <rect x="40" y="80" width="120" height="130" rx="20" fill="url(#creamAcc)" />
+    <!-- Mug Handle -->
+    <path d="M 160 100 C 200 100 200 180 160 180" fill="none" stroke="url(#creamAcc)" stroke-width="20" stroke-linecap="round" />
+    
+    <!-- Steam Lines -->
+    <path d="M 70 60 C 60 40 80 30 70 10" stroke="#ffedd5" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M 100 65 C 90 45 110 35 100 15" stroke="#ffedd5" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M 130 60 C 120 40 140 30 130 10" stroke="#ffedd5" stroke-width="6" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="415" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="34" letter-spacing="6">MUGMUG</text>
+  <text x="256" y="445" text-anchor="middle" fill="#fed7aa" font-family="'Inter', sans-serif" font-weight="700" font-size="14" letter-spacing="3">CUSTOM MUGS & TUMBLERS</text>
+</svg>

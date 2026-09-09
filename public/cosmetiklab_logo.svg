@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cosmeticGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a044e" />
+      <stop offset="50%" stop-color="#701a75" />
+      <stop offset="100%" stop-color="#a21caf" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#cosmeticGrad)" />
+  
+  <!-- Subtle Glowing Ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#goldAcc)" stroke-width="2" opacity="0.3" />
+
+  <!-- Lab Flask + Dropper Cosmetic Bottle -->
+  <g transform="translate(156, 120)">
+    <!-- Flask Outline -->
+    <path d="M 80 40 H 120 V 90 L 170 190 C 180 210 165 240 140 240 H 60 C 35 240 20 210 30 190 L 80 90 Z" fill="none" stroke="url(#goldAcc)" stroke-width="8" stroke-linejoin="round" />
+    
+    <!-- Liquid Level in Flask -->
+    <path d="M 45 160 Q 100 180 155 160 L 168 188 C 175 202 165 224 140 224 H 60 C 35 224 25 202 32 188 Z" fill="#d946ef" opacity="0.6" />
+    
+    <!-- Golden Liquid Bubbles -->
+    <circle cx="85" cy="190" r="8" fill="url(#goldAcc)" />
+    <circle cx="115" cy="170" r="12" fill="url(#goldAcc)" />
+    <circle cx="130" cy="200" r="6" fill="url(#goldAcc)" />
+
+    <!-- Organic Cosmetic Leaf -->
+    <path d="M 100 20 C 120 -10 160 0 150 30 C 130 50 100 20 100 20 Z" fill="url(#goldAcc)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="420" text-anchor="middle" fill="#ffffff" font-family="'Playfair Display', serif" font-weight="800" font-size="30" letter-spacing="4">COSMETIKLAB</text>
+  <text x="256" y="448" text-anchor="middle" fill="#fef08a" font-family="'Inter', sans-serif" font-weight="600" font-size="14" letter-spacing="3">WHITE-LABEL COSMETICS</text>
+</svg>

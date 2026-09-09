@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#woodGrad)" />
+
+  <!-- Wood Grain Rings Backdrop -->
+  <circle cx="256" cy="220" r="160" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.15" />
+  <circle cx="256" cy="220" r="120" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.15" />
+  <circle cx="256" cy="220" r="80" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.15" />
+
+  <!-- Interlocking Wood Plank Monogram N & Tree Rings -->
+  <g transform="translate(156, 100)">
+    <!-- Vertical Timber Beam Left -->
+    <rect x="20" y="30" width="45" height="180" rx="8" fill="url(#amberGold)" />
+    <!-- Diagonal Beam -->
+    <path d="M 65 30 L 135 210 H 180 L 110 30 Z" fill="#d97706" />
+    <!-- Vertical Timber Beam Right -->
+    <rect x="135" y="30" width="45" height="180" rx="8" fill="url(#amberGold)" />
+    
+    <!-- Melamine Edge Line Accent -->
+    <line x1="20" y1="220" x2="180" y2="220" stroke="#fef3c7" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="410" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="26" letter-spacing="3">NATIONAL ARABIC CO.</text>
+  <text x="256" y="442" text-anchor="middle" fill="#fbbf24" font-family="'Inter', sans-serif" font-weight="700" font-size="14" letter-spacing="2">WOOD • MELAMINE • ACCESSORIES</text>
+</svg>

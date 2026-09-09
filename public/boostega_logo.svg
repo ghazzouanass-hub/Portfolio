@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" fill="#FFFFFF" />
+
+  <defs>
+    <!-- Vibrant Orange to Magenta Gradient -->
+    <linearGradient id="boostegaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5200" />
+      <stop offset="40%" stop-color="#FF2E4D" />
+      <stop offset="100%" stop-color="#D8005A" />
+    </linearGradient>
+
+    <!-- Subtle Soft Shadow for Elevation -->
+    <filter id="boostegaShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#E0005A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#boostegaShadow)" id="boostega-icon-main">
+    <!-- Outer B Shell & Integrated Lightning Bolt Path -->
+    <path d="
+      M 150 70
+      L 340 70
+      C 415 70, 465 110, 465 175
+      C 465 220, 430 255, 375 265
+      C 440 280, 475 325, 475 390
+      C 475 458, 415 498, 335 498
+      L 170 498
+      C 150 498, 135 482, 142 462
+      L 175 375
+      L 95 375
+      C 75 375, 65 358, 75 338
+      L 225 185
+      L 180 185
+      C 160 185, 148 170, 158 150
+      L 190 70
+      Z
+
+      M 265 140
+      L 235 225
+      L 335 225
+      C 368 225, 388 208, 388 182
+      C 388 156, 368 140, 335 140
+      Z
+
+      M 220 325
+      L 185 428
+      L 328 428
+      C 365 428, 390 405, 390 376
+      C 390 348, 365 325, 328 325
+      Z
+    " fill="url(#boostegaGrad)" fill-rule="evenodd" />
+
+    <!-- Sharp Lightning Bolt Cut Overlay for Dynamic Energy -->
+    <path d="
+      M 190 155
+      L 320 155
+      L 225 275
+      L 330 275
+      L 125 470
+      L 175 338
+      L 85 338
+      Z
+    " fill="url(#boostegaGrad)" opacity="0.95" />
+  </g>
+</svg>

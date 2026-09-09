@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+    <linearGradient id="foxOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#fenBg)" />
+
+  <!-- Fennec Geometric Fox Graphic (Right Side) -->
+  <g transform="translate(750, 160)">
+    <!-- Large Fox Ears & Face Silhouette -->
+    <polygon points="170,260 30,20 130,190" fill="url(#foxOrangeGrad)" opacity="0.9" />
+    <polygon points="170,260 310,20 210,190" fill="url(#foxOrangeGrad)" opacity="0.9" />
+    <polygon points="170,340 90,210 250,210" fill="#ffffff" />
+    <polygon points="170,340 150,300 190,300" fill="#09090b" />
+  </g>
+
+  <!-- Left Main Content Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#foxOrangeGrad)" />
+  <polygon points="150,155 135,180 165,180" fill="#ffffff" />
+
+  <text x="200" y="165" fill="url(#foxOrangeGrad)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">CONTEMPORARY APPAREL BRAND</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="32" letter-spacing="3">FENNEC</text>
+
+  <text x="120" y="260" fill="#f4f4f5" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Minimalist Activewear & Modern Apparel</text>
+  <text x="120" y="295" fill="#a1a1aa" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Performance activewear and modern leisure apparel brand featuring lightweight
+  </text>
+  <text x="120" y="318" fill="#a1a1aa" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    breathable fabrics, minimalist desert fox branding, and e-commerce growth.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.5" stroke="url(#foxOrangeGrad)" stroke-opacity="0.3" />
+    <text x="16" y="32" fill="url(#foxOrangeGrad)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">APPAREL</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Activewear</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.5" stroke="url(#foxOrangeGrad)" stroke-opacity="0.3" />
+    <text x="171" y="32" fill="url(#foxOrangeGrad)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">BRANDING</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Fennec Fox</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.5" stroke="url(#foxOrangeGrad)" stroke-opacity="0.3" />
+    <text x="326" y="32" fill="url(#foxOrangeGrad)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">MARKET</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Middle East</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="220" height="44" rx="12" fill="url(#foxOrangeGrad)" />
+  <text x="230" y="507" text-anchor="middle" fill="#09090b" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">FENNEC CLOTHING</text>
+</svg>

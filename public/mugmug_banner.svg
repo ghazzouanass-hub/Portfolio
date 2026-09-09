@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mugBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" />
+      <stop offset="50%" stop-color="#9a3412" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="creamAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffedd5" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#mugBg)" />
+
+  <!-- Coffee & Drinkware Stack Illustration (Right Side Graphic) -->
+  <g transform="translate(740, 150)">
+    <!-- Insulated Travel Tumbler -->
+    <rect x="140" y="60" width="100" height="260" rx="20" fill="#ffffff" stroke="#fed7aa" stroke-width="3" />
+    <!-- Tumbler Straw / Lid -->
+    <rect x="130" y="40" width="120" height="20" rx="8" fill="#1e293b" />
+    <rect x="185" y="10" width="10" height="30" rx="4" fill="#38bdf8" />
+    <rect x="150" y="130" width="80" height="90" rx="8" fill="url(#mugBg)" opacity="0.1" />
+    <text x="190" y="180" text-anchor="middle" fill="#9a3412" font-family="'Inter', sans-serif" font-weight="900" font-size="14">MUGMUG</text>
+
+    <!-- Ceramic Coffee Mug -->
+    <rect x="30" y="160" width="120" height="150" rx="20" fill="url(#creamAcc)" stroke="#9a3412" stroke-width="2" />
+    <path d="M 30 180 C -10 180 -10 270 30 270" fill="none" stroke="url(#creamAcc)" stroke-width="16" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Main Content Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#creamAcc)" />
+  <text x="150" y="182" text-anchor="middle" fill="#7c2d12" font-family="'Inter', sans-serif" font-weight="900" font-size="28">M</text>
+
+  <text x="200" y="165" fill="url(#creamAcc)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">CUSTOM DRINKWARE & TUMBLERS</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="32">MUGMUG</text>
+
+  <text x="120" y="260" fill="#ffedd5" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Insulated Tumblers, Mugs & Drinkware</text>
+  <text x="120" y="295" fill="#fed7aa" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Lifestyle drinkware brand specializing in double-wall insulated tumblers,
+  </text>
+  <text x="120" y="318" fill="#fed7aa" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    custom ceramic mugs, laser-engraved flasks, and social marketing campaigns.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#creamAcc)" stroke-opacity="0.4" />
+    <text x="16" y="32" fill="url(#creamAcc)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">PRODUCTS</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Tumblers</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#creamAcc)" stroke-opacity="0.4" />
+    <text x="171" y="32" fill="url(#creamAcc)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">CERAMICS</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Mugs</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#creamAcc)" stroke-opacity="0.4" />
+    <text x="326" y="32" fill="url(#creamAcc)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">TECH</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Insulated</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="220" height="44" rx="12" fill="url(#creamAcc)" />
+  <text x="230" y="507" text-anchor="middle" fill="#7c2d12" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">MUGMUG DRINKWARE</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="natBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="50%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="woodPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#natBg)" />
+
+  <!-- Background Wood Grain Texture Lines -->
+  <path d="M 0 100 Q 600 120 1200 80" stroke="#f59e0b" stroke-width="1" opacity="0.1" fill="none" />
+  <path d="M 0 200 Q 600 240 1200 180" stroke="#f59e0b" stroke-width="1" opacity="0.1" fill="none" />
+  <path d="M 0 350 Q 600 380 1200 320" stroke="#f59e0b" stroke-width="1" opacity="0.1" fill="none" />
+  <path d="M 0 500 Q 600 520 1200 480" stroke="#f59e0b" stroke-width="1" opacity="0.1" fill="none" />
+
+  <!-- Stacked Melamine Board Panels (Right Graphic Illustration) -->
+  <g transform="translate(720, 160)">
+    <!-- Melamine Board 1 -->
+    <polygon points="0,200 240,80 400,160 160,280" fill="url(#woodPanel)" stroke="#fbbf24" stroke-width="2" />
+    <!-- White Melamine Board 2 -->
+    <polygon points="0,170 240,50 400,130 160,250" fill="#f8fafc" stroke="#d97706" stroke-width="2" />
+    <!-- Oak Melamine Board 3 -->
+    <polygon points="0,140 240,20 400,100 160,220" fill="url(#amberGold)" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Cabinet Hardware Fittings Overlay (Hinges & Handles) -->
+    <circle cx="200" cy="80" r="14" fill="#334155" stroke="#fbbf24" stroke-width="2" />
+    <rect x="260" y="50" width="80" height="14" rx="4" fill="#94a3b8" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Left Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#amberGold)" />
+  <path d="M 138 180 V 152 L 162 180 V 152" stroke="#451a03" stroke-width="5" stroke-linecap="round" fill="none" />
+
+  <text x="200" y="165" fill="url(#amberGold)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">WOOD, MELAMINE & ACCESSORIES</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="28">NATIONAL ARABIC CO.</text>
+
+  <text x="120" y="260" fill="#fef3c7" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Timber, Melamine Sheets & Furniture Hardware</text>
+  <text x="120" y="295" fill="#fde68a" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Premier Kuwait & Middle East supplier of high-grade natural timber,
+  </text>
+  <text x="120" y="318" fill="#fde68a" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    melamine panels, edge banding, and European cabinet accessories.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.4" stroke="url(#amberGold)" stroke-opacity="0.4" />
+    <text x="16" y="32" fill="url(#amberGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">PRODUCTS</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Melamine</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.4" stroke="url(#amberGold)" stroke-opacity="0.4" />
+    <text x="171" y="32" fill="url(#amberGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">TIMBER</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Wood Supply</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.4" stroke="url(#amberGold)" stroke-opacity="0.4" />
+    <text x="326" y="32" fill="url(#amberGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">HARDWARE</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Accessories</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="230" height="44" rx="12" fill="url(#amberGold)" />
+  <text x="235" y="507" text-anchor="middle" fill="#451a03" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">NATIONAL WOOD SUPPLIER</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "PortfolioMedia": {
+      "title": "PortfolioMedia",
+      "description": "User uploaded portfolio images, logos, banners and media assets",
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "Storage key identifier"
+        },
+        "dataUrl": {
+          "type": "string",
+          "description": "Base64 data URL or asset URL"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["key", "dataUrl"]
+    }
+  },
+  "firestore": {
+    "/portfolio_media/{mediaId}": {
+      "schema": "PortfolioMedia",
+      "description": "Public read and client synced portfolio media assets"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <rect width="800" height="800" fill="#FFFFFF" />
+
+  <defs>
+    <!-- Green horizontal stripes pattern -->
+    <pattern id="luluGreenStripes" width="800" height="24" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="800" height="12" fill="#009038" />
+      <rect x="0" y="12" width="800" height="12" fill="#FFFFFF" />
+    </pattern>
+
+    <!-- Shadow for depth -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <g id="lulu-logo-group">
+    <!-- Green Striped Globe / Circle in Background -->
+    <circle cx="390" cy="440" r="190" fill="url(#luluGreenStripes)" />
+
+    <!-- Center White Circular Opening in Green Circle -->
+    <circle cx="390" cy="440" r="65" fill="#FFFFFF" />
+
+    <!-- Red Inner Crescent Arcs inside white circle -->
+    <path d="M 350 420 A 42 42 0 0 1 430 420" fill="none" stroke="#E31B23" stroke-width="9" stroke-linecap="round" />
+    <path d="M 350 460 A 42 42 0 0 0 430 460" fill="none" stroke="#E31B23" stroke-width="9" stroke-linecap="round" />
+
+    <!-- Top Left Red Ribbon Swoosh -->
+    <path d="M 100 280 C 180 200, 300 140, 430 150 C 320 160, 200 210, 120 300 Z" fill="#E31B23" />
+
+    <!-- Middle Top-to-Right Flowing Ribbon 1 -->
+    <path d="M 125 360 C 230 250, 420 140, 600 160 C 670 200, 710 320, 700 480 C 690 570, 650 650, 620 670 C 600 680, 580 660, 590 640 C 620 600, 650 510, 650 430 C 650 310, 580 210, 450 180 C 300 170, 180 250, 125 360 Z" fill="#E31B23" />
+
+    <!-- Outer Far Right Flowing Ribbon 2 -->
+    <path d="M 380 150 C 520 140, 680 190, 730 380 C 760 500, 740 600, 700 680 C 680 720, 660 725, 650 710 C 650 690, 680 630, 700 540 C 720 420, 680 280, 570 200 C 500 165, 420 152, 380 150 Z" fill="#E31B23" />
+
+    <!-- Main Foreground Red Cursive Calligraphy 'L' -->
+    <path d="M 360 210 
+             C 420 210, 470 250, 450 310 
+             C 430 370, 360 430, 280 480 
+             C 200 530, 120 570, 90 620 
+             C 70 650, 80 680, 110 680 
+             C 160 680, 260 610, 370 530 
+             C 450 470, 510 390, 490 300 
+             C 470 220, 390 190, 310 210 
+             C 230 230, 170 300, 160 380 
+             C 150 460, 200 540, 270 590 
+             C 330 630, 410 650, 460 640 
+             C 400 660, 310 650, 240 610 
+             C 160 560, 100 480, 110 390 
+             C 120 300, 190 220, 280 190 
+             C 310 180, 340 190, 360 210 Z" fill="#E31B23" />
+
+    <!-- Inner Calligraphic Accent loop -->
+    <path d="M 380 250 C 430 250, 450 290, 420 340 C 380 400, 290 460, 210 510 C 270 470, 350 410, 390 360 C 420 320, 410 270, 380 250 Z" fill="#E31B23" />
+  </g>
+</svg>

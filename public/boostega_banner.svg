@@ -1,0 +1,443 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%" style="background:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="boostegaLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF512F"/>
+      <stop offset="100%" stop-color="#DD2476"/>
+    </linearGradient>
+
+    <linearGradient id="instaGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f09433"/>
+      <stop offset="25%" stop-color="#e6683c"/>
+      <stop offset="50%" stop-color="#dc2743"/>
+      <stop offset="75%" stop-color="#cc2366"/>
+      <stop offset="100%" stop-color="#bc1888"/>
+    </linearGradient>
+
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="500" fill="url(#bgGlow)"/>
+
+  <!-- Decorative Overhead Lights -->
+  <g opacity="0.8">
+    <line x1="100" y1="0" x2="100" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+    <polygon points="90,50 110,50 115,70 85,70" fill="#0ea5e9"/>
+    
+    <line x1="140" y1="0" x2="140" y2="80" stroke="#0284c7" stroke-width="2"/>
+    <polygon points="130,80 150,80 155,100 125,100" fill="#0284c7"/>
+
+    <line x1="180" y1="0" x2="180" y2="35" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="172,35 188,35 192,50 168,50" fill="#38bdf8"/>
+  </g>
+
+  <!-- Floating Sparkles & Emojis -->
+  <g opacity="0.9">
+    <!-- Rocket -->
+    <g transform="translate(320, 35) scale(0.7)">
+      <path d="M20,0 C30,10 35,25 35,40 L5,40 C5,25 10,10 20,0 Z" fill="#ff4757"/>
+      <path d="M20,0 C25,10 28,25 28,40 L12,40 C12,25 15,10 20,0 Z" fill="#ffa502"/>
+      <circle cx="20" cy="20" r="5" fill="#ffffff"/>
+      <polygon points="5,40 0,55 10,48" fill="#ff6b81"/>
+      <polygon points="35,40 40,55 30,48" fill="#ff6b81"/>
+      <polygon points="15,40 20,58 25,40" fill="#eccc68"/>
+    </g>
+
+    <!-- Heart Emoji -->
+    <g transform="translate(480, 30)">
+      <circle cx="25" cy="25" r="22" fill="#ffda79"/>
+      <path d="M12,18 Q16,12 20,18 T28,18 Q25,25 20,28 Z" fill="#ff5252"/>
+      <path d="M22,18 Q26,12 30,18 T38,18 Q35,25 30,28 Z" fill="#ff5252"/>
+      <path d="M15,32 Q25,38 35,32" stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Surprised Emoji -->
+    <g transform="translate(1000, 45)">
+      <circle cx="25" cy="25" r="22" fill="#ffda79"/>
+      <ellipse cx="16" cy="18" rx="3" ry="5" fill="#222"/>
+      <ellipse cx="34" cy="18" rx="3" ry="5" fill="#222"/>
+      <ellipse cx="25" cy="32" rx="5" ry="7" fill="#222"/>
+    </g>
+
+    <!-- Musical Note -->
+    <g transform="translate(880, 20)" fill="#38bdf8">
+      <path d="M10,35 A6,6 0 1,1 4,29 L4,10 L30,4 L30,25 A6,6 0 1,1 24,19 L24,10 L10,13 Z"/>
+    </g>
+
+    <!-- Sale Tag -->
+    <g transform="translate(1040, 75) rotate(15)">
+      <rect width="90" height="45" rx="8" fill="#ff7f50"/>
+      <circle cx="15" cy="22.5" r="4" fill="#ffffff"/>
+      <text x="32" y="29" font-size="16" font-weight="900" fill="#ffffff" font-family="Arial">SALE</text>
+    </g>
+
+    <!-- New Badge -->
+    <g transform="translate(720, 130) rotate(-10)">
+      <path d="M25,0 L32,12 L46,8 L42,22 L55,28 L45,38 L52,51 L38,49 L35,63 L25,53 L15,63 L12,49 L-2,51 L5,38 L-5,28 L8,22 L4,8 L18,12 Z" fill="#ff4757"/>
+      <text x="25" y="32" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="Arial">NEW</text>
+    </g>
+
+    <!-- Windows Icon -->
+    <g transform="translate(660, 220) scale(0.8)">
+      <rect x="0" y="0" width="16" height="16" fill="#00adef"/>
+      <rect x="18" y="0" width="16" height="16" fill="#00adef"/>
+      <rect x="0" y="18" width="16" height="16" fill="#00adef"/>
+      <rect x="18" y="18" width="16" height="16" fill="#00adef"/>
+    </g>
+  </g>
+
+  <!-- Left Header Text -->
+  <g transform="translate(50, 120)">
+    <!-- Main Title -->
+    <text x="0" y="45" font-size="52" font-weight="900" fill="#00a859" font-family="'Plus Jakarta Sans', Arial, sans-serif" letter-spacing="-1">
+      Top Digital Provider
+    </text>
+
+    <!-- Subtitle Line 1 -->
+    <text x="5" y="88" font-size="22" font-weight="700" fill="#1e293b" font-family="'Georgia', serif" letter-spacing="-0.2">
+      Authentic Softwares, Premium Accounts, SMM Boosts
+    </text>
+
+    <!-- Subtitle Line 2 -->
+    <text x="5" y="120" font-size="22" font-weight="700" fill="#1e293b" font-family="'Georgia', serif" letter-spacing="-0.2">
+      and More at Unbeatable Prices!
+    </text>
+  </g>
+
+  <!-- Office 365 Logo & Icons (Top Right) -->
+  <g transform="translate(600, 15)">
+    <!-- Red Office Tile -->
+    <rect x="0" y="10" width="36" height="42" rx="4" fill="#eb3c00"/>
+    <path d="M12,22 L24,18 L24,44 L12,40 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M12,22 L18,20 L18,42 L12,40 Z" fill="#ffffff"/>
+    
+    <!-- "Office" Text -->
+    <text x="48" y="44" font-size="38" font-weight="700" fill="#eb3c00" font-family="'Segoe UI', Arial, sans-serif">Office</text>
+
+    <!-- Office App Icons Row -->
+    <g transform="translate(0, 62)">
+      <!-- W Word -->
+      <rect x="0" y="0" width="18" height="18" rx="3" fill="#2b579a"/>
+      <text x="9" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">W</text>
+
+      <!-- X Excel -->
+      <rect x="22" y="0" width="18" height="18" rx="3" fill="#217346"/>
+      <text x="31" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">X</text>
+
+      <!-- P PowerPoint -->
+      <rect x="44" y="0" width="18" height="18" rx="3" fill="#d24726"/>
+      <text x="53" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">P</text>
+
+      <!-- O Outlook -->
+      <rect x="66" y="0" width="18" height="18" rx="3" fill="#0072c6"/>
+      <text x="75" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">O</text>
+
+      <!-- A Access -->
+      <rect x="88" y="0" width="18" height="18" rx="3" fill="#a4373a"/>
+      <text x="97" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
+
+      <!-- N OneNote -->
+      <rect x="110" y="0" width="18" height="18" rx="3" fill="#80397b"/>
+      <text x="119" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+
+      <!-- P Publisher -->
+      <rect x="132" y="0" width="18" height="18" rx="3" fill="#0c59a4"/>
+      <text x="141" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">P</text>
+
+      <!-- L Teams/Lync -->
+      <rect x="154" y="0" width="18" height="18" rx="3" fill="#008272"/>
+      <text x="163" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">L</text>
+
+      <!-- I InfoPath -->
+      <rect x="176" y="0" width="18" height="18" rx="3" fill="#0072c6"/>
+      <text x="185" y="13" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">I</text>
+    </g>
+  </g>
+
+  <!-- Central Phone Mockup & Shopping Illustration -->
+  <g transform="translate(820, 110)">
+    <!-- Mobile Phone Body -->
+    <rect x="0" y="0" width="180" height="260" rx="28" fill="#1e293b" filter="url(#dropShadow)"/>
+    <rect x="6" y="6" width="168" height="248" rx="24" fill="#ffffff"/>
+    
+    <!-- Phone Camera Notch -->
+    <rect x="65" y="12" width="50" height="6" rx="3" fill="#0f172a"/>
+
+    <!-- Screen Content -->
+    <!-- Boostega Logo on Screen -->
+    <g transform="translate(30, 40)">
+      <rect width="110" height="80" rx="16" fill="url(#boostegaLogoGrad)"/>
+      <!-- B Logo -->
+      <path d="M40,20 L65,20 C72,20 76,23 76,28 C76,32 72,34 66,35 C74,36 78,40 78,46 C78,53 72,56 62,56 L40,56 Z M50,27 L50,33 L62,33 C66,33 68,32 68,30 C68,28 66,27 62,27 Z M50,40 L50,48 L64,48 C68,48 70,46 70,44 C70,42 68,40 64,40 Z" fill="#ffffff"/>
+      <!-- Bolt in B -->
+      <polygon points="56,22 48,38 55,38 52,52 64,34 57,34" fill="#ffeb3b"/>
+    </g>
+
+    <!-- Star Ratings -->
+    <g transform="translate(35, 135)" fill="#ffc107">
+      <polygon points="10,0 12,6 18,6 13,10 15,16 10,12 5,16 7,10 2,6 8,6"/>
+      <polygon points="30,0 32,6 38,6 33,10 35,16 30,12 25,16 27,10 22,6 28,6"/>
+      <polygon points="50,0 52,6 58,6 53,10 55,16 50,12 45,16 47,10 42,6 48,6"/>
+      <polygon points="70,0 72,6 78,6 73,10 75,16 70,12 65,16 67,10 62,6 68,6"/>
+      <polygon points="90,0 92,6 98,6 93,10 95,16 90,12 85,16 87,10 82,6 88,6"/>
+    </g>
+
+    <!-- Product Lines on Screen -->
+    <rect x="25" y="160" width="130" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="25" y="172" width="90" height="6" rx="3" fill="#e2e8f0"/>
+
+    <!-- Add Button (+) -->
+    <circle cx="135" cy="205" r="16" fill="#0284c7"/>
+    <path d="M135,197 L135,213 M127,205 L143,205" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Gift Box next to Phone -->
+  <g transform="translate(960, 240)" filter="url(#dropShadow)">
+    <rect x="0" y="20" width="95" height="70" rx="8" fill="#0284c7"/>
+    <rect x="-5" y="10" width="105" height="16" rx="4" fill="#38bdf8"/>
+    <!-- Yellow Ribbon -->
+    <rect x="40" y="20" width="15" height="70" fill="#facc15"/>
+    <rect x="37" y="10" width="21" height="16" fill="#facc15"/>
+    <!-- Bow -->
+    <path d="M35,10 C25,-5 45,-5 47,10 Z" fill="#facc15"/>
+    <path d="M60,10 C70,-5 50,-5 48,10 Z" fill="#facc15"/>
+  </g>
+
+  <!-- YouTube Floating Badge (Right side) -->
+  <g transform="translate(1040, 180)">
+    <rect width="85" height="60" rx="16" fill="#ff0000"/>
+    <polygon points="34,20 58,30 34,40" fill="#ffffff"/>
+  </g>
+
+  <!-- Potted Plant (Far Right) -->
+  <g transform="translate(1050, 240)">
+    <polygon points="20,100 60,100 68,135 12,135" fill="#a8a29e"/>
+    <!-- Leaves -->
+    <path d="M40,100 Q10,50 0,10 Q30,30 40,100 Z" fill="#00a859"/>
+    <path d="M40,100 Q70,40 80,0 Q50,20 40,100 Z" fill="#008a48"/>
+    <path d="M40,100 Q40,20 35,-15 Q50,10 40,100 Z" fill="#34d399"/>
+  </g>
+
+  <!-- Character 1: Shopping Cart & Person (Center) -->
+  <g transform="translate(510, 200)">
+    <!-- Shopping Cart -->
+    <path d="M110,130 L160,130 L180,75 L125,75 Z" fill="none" stroke="#64748b" stroke-width="3"/>
+    <circle cx="125" cy="140" r="8" fill="#334155"/>
+    <circle cx="155" cy="140" r="8" fill="#334155"/>
+    <line x1="110" y1="130" x2="95" y2="50" stroke="#64748b" stroke-width="3"/>
+    <line x1="95" y1="50" x2="80" y2="50" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Discount % Tag in Cart -->
+    <g transform="translate(130, 80) rotate(-15)">
+      <rect width="42" height="30" rx="6" fill="#38bdf8"/>
+      <text x="21" y="21" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">%</text>
+    </g>
+
+    <!-- Person Pushing Cart -->
+    <!-- Legs -->
+    <line x1="30" y1="90" x2="10" y2="170" stroke="#1e3a8a" stroke-width="12" stroke-linecap="round"/>
+    <line x1="30" y1="90" x2="60" y2="170" stroke="#1e3a8a" stroke-width="12" stroke-linecap="round"/>
+    <!-- Torso -->
+    <path d="M30,90 L45,25 L15,25 Z" fill="#2563eb"/>
+    <!-- Head -->
+    <circle cx="30" cy="10" r="12" fill="#0f172a"/>
+    <!-- Arm -->
+    <line x1="30" y1="40" x2="80" y2="50" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Character 2: Person sitting with phone (Left) -->
+  <g transform="translate(70, 220)">
+    <!-- Plant behind -->
+    <path d="M30,120 Q-10,70 0,20 Q30,40 30,120 Z" fill="#059669"/>
+    <path d="M30,120 Q60,60 70,10 Q40,30 30,120 Z" fill="#10b981"/>
+
+    <!-- Screen graphic box -->
+    <rect x="65" y="10" width="85" height="110" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#dropShadow)"/>
+    <rect x="75" y="20" width="65" height="50" rx="8" fill="#ff4757"/>
+    <circle cx="107" cy="45" r="12" fill="#ffffff"/>
+    <polygon points="104,39 114,45 104,51" fill="#ff4757"/>
+    <rect x="75" y="80" width="50" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="75" y="92" width="35" height="6" rx="3" fill="#cbd5e1"/>
+
+    <!-- Person 1 Standing Raising Hand -->
+    <!-- Legs -->
+    <line x1="30" y1="80" x2="20" y2="150" stroke="#047857" stroke-width="10" stroke-linecap="round"/>
+    <line x1="30" y1="80" x2="45" y2="150" stroke="#047857" stroke-width="10" stroke-linecap="round"/>
+    <!-- Torso -->
+    <rect x="18" y="25" width="25" height="55" rx="10" fill="#f59e0b"/>
+    <!-- Head -->
+    <circle cx="30" cy="10" r="11" fill="#475569"/>
+    <!-- Raised Arm -->
+    <path d="M20,35 L-5,10" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Person 2 Sitting -->
+    <g transform="translate(100, 70)">
+      <circle cx="20" cy="0" r="10" fill="#0f172a"/>
+      <rect x="10" y="12" width="20" height="35" rx="8" fill="#2563eb"/>
+      <path d="M10,45 L-10,55 L-10,80" stroke="#1e3a8a" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M25,45 L45,55 L45,80" stroke="#1e3a8a" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Potted Plant Center-Left -->
+  <g transform="translate(410, 210)">
+    <rect x="25" y="110" width="40" height="40" rx="6" fill="#a8a29e"/>
+    <path d="M45,110 Q20,50 10,10 Q40,30 45,110 Z" fill="#0284c7"/>
+    <path d="M45,110 Q70,40 80,0 Q50,20 45,110 Z" fill="#38bdf8"/>
+    <path d="M45,110 Q45,30 40,-10 Q55,10 45,110 Z" fill="#0284c7"/>
+  </g>
+
+  <!-- Lightbulbs -->
+  <g transform="translate(325, 200)">
+    <circle cx="20" cy="20" r="18" fill="#ffc107"/>
+    <rect x="14" y="36" width="12" height="8" fill="#94a3b8"/>
+  </g>
+  <g transform="translate(385, 290)">
+    <circle cx="15" cy="15" r="15" fill="#ffc107"/>
+    <rect x="10" y="28" width="10" height="6" fill="#94a3b8"/>
+  </g>
+
+
+  <!-- Bottom Divider Line -->
+  <line x1="30" y1="390" x2="1170" y2="390" stroke="#cbd5e1" stroke-width="2"/>
+
+
+  <!-- Bottom 18 Social & Software Brand Badges Row -->
+  <g transform="translate(25, 410)">
+    
+    <!-- 1. YouTube -->
+    <g transform="translate(0, 0)">
+      <circle cx="22" cy="22" r="22" fill="#ff0000"/>
+      <polygon points="17,14 31,22 17,30" fill="#ffffff"/>
+    </g>
+
+    <!-- 2. Facebook -->
+    <g transform="translate(62, 0)">
+      <circle cx="22" cy="22" r="22" fill="#1877f2"/>
+      <text x="22" y="31" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="Arial">f</text>
+    </g>
+
+    <!-- 3. Telegram -->
+    <g transform="translate(124, 0)">
+      <circle cx="22" cy="22" r="22" fill="#229ed9"/>
+      <path d="M12,22 L32,13 L27,31 L20,25 L16,28 L17,23 L28,16 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- 4. Pinterest -->
+    <g transform="translate(186, 0)">
+      <circle cx="22" cy="22" r="22" fill="#e60023"/>
+      <text x="22" y="31" font-size="25" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Georgia', serif">p</text>
+    </g>
+
+    <!-- 5. Reddit -->
+    <g transform="translate(248, 0)">
+      <circle cx="22" cy="22" r="22" fill="#ff4500"/>
+      <circle cx="22" cy="22" r="12" fill="#ffffff"/>
+      <circle cx="17" cy="20" r="2.5" fill="#ff4500"/>
+      <circle cx="27" cy="20" r="2.5" fill="#ff4500"/>
+      <path d="M16,26 Q22,31 28,26" stroke="#ff4500" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- 6. Adobe -->
+    <g transform="translate(310, 0)">
+      <circle cx="22" cy="22" r="22" fill="#da1f26"/>
+      <polygon points="12,32 22,12 22,32" fill="#ffffff"/>
+      <polygon points="32,32 22,12 32,12" fill="#ffffff"/>
+      <polygon points="17,24 27,24 22,32" fill="#ffffff"/>
+    </g>
+
+    <!-- 7. IPTV Smarters -->
+    <g transform="translate(372, 0)">
+      <circle cx="22" cy="22" r="22" fill="#1e3a8a"/>
+      <rect x="12" y="14" width="20" height="14" rx="2" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <polygon points="10,32 34,32 22,28" fill="#ffffff"/>
+      <text x="22" y="23" font-size="6" font-weight="900" fill="#ffffff" text-anchor="middle">IPTV</text>
+    </g>
+
+    <!-- 8. Tumblr -->
+    <g transform="translate(434, 0)">
+      <circle cx="22" cy="22" r="22" fill="#36465d"/>
+      <text x="22" y="32" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Georgia', serif">t</text>
+    </g>
+
+    <!-- 9. Instagram -->
+    <g transform="translate(496, 0)">
+      <circle cx="22" cy="22" r="22" fill="url(#instaGrad)"/>
+      <rect x="12" y="12" width="20" height="20" rx="6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+      <circle cx="22" cy="22" r="5" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+      <circle cx="27.5" cy="16.5" r="1.5" fill="#ffffff"/>
+    </g>
+
+    <!-- 10. Netflix -->
+    <g transform="translate(558, 0)">
+      <circle cx="22" cy="22" r="22" fill="#000000"/>
+      <path d="M15,10 L21,10 L21,34 L15,34 Z" fill="#e50914"/>
+      <path d="M23,10 L29,10 L29,34 L23,34 Z" fill="#e50914"/>
+      <path d="M15,10 L29,34 L23,34 L15,10 Z" fill="#b81d24"/>
+    </g>
+
+    <!-- 11. Spotify -->
+    <g transform="translate(620, 0)">
+      <circle cx="22" cy="22" r="22" fill="#1ed760"/>
+      <path d="M12,17 Q22,13 32,18" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M14,22 Q22,19 30,23" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M16,27 Q22,25 28,28" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- 12. Office 365 -->
+    <g transform="translate(682, 0)">
+      <circle cx="22" cy="22" r="22" fill="#eb3c00"/>
+      <path d="M14,14 L28,10 L28,34 L14,30 Z" fill="#ffffff"/>
+      <text x="22" y="40" font-size="6" font-weight="900" fill="#ffffff" text-anchor="middle">Office 365</text>
+    </g>
+
+    <!-- 13. Quora -->
+    <g transform="translate(744, 0)">
+      <circle cx="22" cy="22" r="22" fill="#b92b27"/>
+      <text x="22" y="32" font-size="25" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Georgia', serif">Q</text>
+    </g>
+
+    <!-- 14. Discord -->
+    <g transform="translate(806, 0)">
+      <circle cx="22" cy="22" r="22" fill="#5865f2"/>
+      <path d="M14,16 C17,14 27,14 30,16 C32,20 32,27 30,30 C26,32 18,32 14,30 C12,27 12,20 14,16 Z" fill="#ffffff"/>
+      <circle cx="18" cy="22" r="2" fill="#5865f2"/>
+      <circle cx="26" cy="22" r="2" fill="#5865f2"/>
+    </g>
+
+    <!-- 15. TikTok -->
+    <g transform="translate(868, 0)">
+      <circle cx="22" cy="22" r="22" fill="#000000"/>
+      <path d="M20,12 L20,26 A5,5 0 1,1 15,21 L15,17 A9,9 0 1,0 24,26 L24,18 A8,8 0 0,0 29,20 L29,15 A12,12 0 0,1 20,12 Z" fill="#25f4ee"/>
+      <path d="M22,10 L22,24 A5,5 0 1,1 17,19 L17,15 A9,9 0 1,0 26,24 L26,16 A8,8 0 0,0 31,18 L31,13 A12,12 0 0,1 22,10 Z" fill="#fe2c55"/>
+    </g>
+
+    <!-- 16. Amazon -->
+    <g transform="translate(930, 0)">
+      <circle cx="22" cy="22" r="22" fill="#232f3e"/>
+      <text x="22" y="24" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">amazon</text>
+      <path d="M14,27 Q22,32 30,27" stroke="#ff9900" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- 17. LinkedIn -->
+    <g transform="translate(992, 0)">
+      <circle cx="22" cy="22" r="22" fill="#0a66c2"/>
+      <text x="22" y="29" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">in</text>
+    </g>
+
+    <!-- 18. SoundCloud -->
+    <g transform="translate(1054, 0)">
+      <circle cx="22" cy="22" r="22" fill="#ff5500"/>
+      <path d="M14,26 L14,20 M17,28 L17,17 M20,28 L20,15 M23,28 A7,7 0 0,1 32,22 A5,5 0 0,1 32,28 Z" stroke="#ffffff" stroke-width="2" fill="#ffffff" stroke-linecap="round"/>
+    </g>
+
+  </g>
+</svg>

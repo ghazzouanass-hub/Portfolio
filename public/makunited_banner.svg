@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="60%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Tech Background -->
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- World Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5">
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Glowing Logistics Route Lines -->
+  <path d="M 150 480 Q 400 200 700 350 T 1100 220" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="8 6" opacity="0.8" />
+  <path d="M 100 250 Q 500 500 850 200 T 1150 450" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="6 4" opacity="0.6" />
+
+  <!-- Shipping Vessel & Cargo Container Graphic Illustration -->
+  <g transform="translate(680, 220)" opacity="0.95">
+    <!-- Ship Hull -->
+    <path d="M 0 160 L 40 220 H 320 L 380 160 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <!-- Stacked Cargo Containers -->
+    <rect x="60" y="100" width="60" height="55" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <rect x="130" y="100" width="60" height="55" rx="4" fill="#38bdf8" stroke="#ffffff" stroke-width="1" />
+    <rect x="200" y="100" width="60" height="55" rx="4" fill="#0369a1" stroke="#38bdf8" stroke-width="1" />
+    
+    <rect x="95" y="40" width="60" height="55" rx="4" fill="#38bdf8" stroke="#ffffff" stroke-width="1" />
+    <rect x="165" y="40" width="60" height="55" rx="4" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+  </g>
+
+  <!-- Left Glass Card: Executive Summary -->
+  <rect x="80" y="100" width="540" height="475" rx="32" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+  
+  <!-- Logo Icon Badge -->
+  <rect x="120" y="140" width="64" height="64" rx="20" fill="#0284c7" />
+  <path d="M 136 180 V 156 L 152 174 H 156 L 144 180 Z" fill="#ffffff" />
+  <path d="M 168 180 V 156 L 152 174 H 148 L 160 180 Z" fill="#ffffff" />
+  <path d="M 152 150 L 160 160 H 144 Z" fill="#38bdf8" />
+
+  <text x="204" y="165" fill="#38bdf8" font-family="'Inter', sans-serif" font-weight="800" font-size="14" letter-spacing="3">GLOBAL LOGISTICS & TRADING</text>
+  <text x="204" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="28" letter-spacing="1">MAK UNITED W.L.L</text>
+
+  <text x="120" y="260" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Supply Chain, Freight & Procurement Partner</text>
+  <text x="120" y="295" fill="#94a3b8" font-family="'Inter', sans-serif" font-weight="400" font-size="14" width="460">
+    Leading Middle East logistics provider specializing in end-to-end cargo freight,
+  </text>
+  <text x="120" y="318" fill="#94a3b8" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    industrial procurement, warehousing, and digital marketing execution.
+  </text>
+
+  <!-- Key Metrics Row inside Card -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="135" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="#38bdf8" stroke-opacity="0.3" />
+    <text x="16" y="32" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="700">NETWORKS</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="22" font-weight="900">50+ GCC</text>
+
+    <rect x="150" y="0" width="135" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="#38bdf8" stroke-opacity="0.3" />
+    <text x="166" y="32" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="700">SERVICES</text>
+    <text x="166" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="22" font-weight="900">Air / Sea</text>
+
+    <rect x="300" y="0" width="145" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="#38bdf8" stroke-opacity="0.3" />
+    <text x="316" y="32" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="700">STATUS</text>
+    <text x="316" y="62" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="20" font-weight="900">Official Web</text>
+  </g>
+
+  <!-- Bottom CTA Tag -->
+  <rect x="120" y="480" width="220" height="44" rx="12" fill="url(#cyanGlow)" />
+  <text x="230" y="507" text-anchor="middle" fill="#0f172a" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="1">VISIT MAKUNITED.COM</text>
+</svg>

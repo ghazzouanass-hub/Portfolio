@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="smBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#smBg)" />
+
+  <!-- Downloader Plugin Interface Illustration (Right Side Graphic) -->
+  <g transform="translate(710, 140)">
+    <!-- Downloader Interface Box -->
+    <rect x="20" y="30" width="360" height="280" rx="24" fill="#1e1b4b" stroke="#a855f7" stroke-width="2" />
+    <rect x="40" y="60" width="320" height="40" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="1.5" />
+    <text x="60" y="85" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">https://instagram.com/p/reel_sample_hd...</text>
+    <rect x="280" y="65" width="70" height="30" rx="8" fill="url(#neonGlow)" />
+    <text x="315" y="85" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="800">FETCH</text>
+
+    <!-- Platform Badges inside Plugin UI -->
+    <g transform="translate(40, 120)">
+      <rect x="0" y="0" width="80" height="30" rx="8" fill="#e1306c" />
+      <text x="40" y="19" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Instagram</text>
+
+      <rect x="90" y="0" width="70" height="30" rx="8" fill="#000000" stroke="#00f2fe" stroke-width="1" />
+      <text x="125" y="19" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700">TikTok</text>
+
+      <rect x="170" y="0" width="75" height="30" rx="8" fill="#ff0000" />
+      <text x="207" y="19" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700">YouTube</text>
+
+      <rect x="255" y="0" width="65" height="30" rx="8" fill="#1da1f2" />
+      <text x="287" y="19" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700">Twitter/X</text>
+    </g>
+
+    <!-- Feature Output Details -->
+    <rect x="40" y="170" width="320" height="110" rx="16" fill="#0f172a" opacity="0.8" />
+    <text x="60" y="200" fill="#a855f7" font-family="'Inter', sans-serif" font-size="12" font-weight="700">[boostega_downloader] Shortcode Active</text>
+    <text x="60" y="225" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="12">✔ 4K / HD Video • MP3 Audio • Stories</text>
+    <text x="60" y="250" fill="#ec4899" font-family="'Inter', sans-serif" font-size="12">✔ 50+ Social Platforms Supported</text>
+  </g>
+
+  <!-- Left Main Content Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#neonGlow)" />
+  <path d="M 150 155 V 185 M 138 173 L 150 185 L 162 173" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <text x="200" y="165" fill="url(#neonGlow)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">50+ PLATFORMS MEDIA DOWNLOADER</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="30">SMOADER PLUGIN</text>
+
+  <text x="120" y="260" fill="#e9d5ff" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Proprietary Social Downloader WordPress Plugin</text>
+  <text x="120" y="295" fill="#f3e8ff" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Engineered by Anass Ghazzou (Boostega.com) to extract HD videos, photos & audio
+  </text>
+  <text x="120" y="318" fill="#f3e8ff" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    from 50+ social networks with AJAX proxy security and IP rate limiting.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#neonGlow)" stroke-opacity="0.4" />
+    <text x="16" y="32" fill="url(#neonGlow)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">COVERAGE</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">50+ Sites</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#neonGlow)" stroke-opacity="0.4" />
+    <text x="171" y="32" fill="url(#neonGlow)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">SHORTCODE</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">WordPress</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#neonGlow)" stroke-opacity="0.4" />
+    <text x="326" y="32" fill="url(#neonGlow)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">SECURITY</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">WP Nonce</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="230" height="44" rx="12" fill="url(#neonGlow)" />
+  <text x="235" y="507" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">BOOSTEGA PLUGIN AUTHOR</text>
+</svg>

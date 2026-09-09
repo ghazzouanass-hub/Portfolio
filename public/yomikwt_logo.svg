@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="yomiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldBath" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#yomiGrad)" />
+
+  <!-- Towel Fold Wave & Water Drop Icon -->
+  <g transform="translate(156, 100)">
+    <!-- Bathrobe / Towel Fold Curve -->
+    <path d="M 40 180 C 20 80 180 80 160 180 C 140 240 60 240 40 180 Z" fill="none" stroke="url(#goldBath)" stroke-width="12" stroke-linecap="round" />
+    <path d="M 70 160 C 50 90 150 90 130 160 Z" fill="none" stroke="#ffffff" stroke-width="8" />
+    <!-- Water Drop -->
+    <path d="M 100 20 C 100 20 120 50 120 65 C 120 75 110 85 100 85 C 90 85 80 75 80 65 C 80 50 100 20 100 20 Z" fill="url(#goldBath)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="415" text-anchor="middle" fill="#ffffff" font-family="'Playfair Display', serif" font-weight="800" font-size="34" letter-spacing="6">YOMI KWT</text>
+  <text x="256" y="445" text-anchor="middle" fill="#fef08a" font-family="'Inter', sans-serif" font-weight="600" font-size="14" letter-spacing="3">LUXURY TOWELS & SHOWER APPAREL</text>
+</svg>

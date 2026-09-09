@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="makGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="makAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" rx="128" fill="url(#makGrad)" />
+  
+  <!-- Globe / Network Grid Rings -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+  <path d="M 76 256 H 436 M 256 76 V 436" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+
+  <!-- Monogram M & Arrows -->
+  <g filter="url(#shadow)">
+    <!-- Left Pillar -->
+    <path d="M 128 352 V 176 L 216 272 H 236 L 156 352 Z" fill="#ffffff" />
+    <!-- Center V -->
+    <path d="M 216 272 L 256 196 L 296 272 L 256 320 Z" fill="url(#makAccent)" />
+    <!-- Right Pillar -->
+    <path d="M 384 352 V 176 L 296 272 H 276 L 356 352 Z" fill="#ffffff" />
+    
+    <!-- Forward Arrow Header -->
+    <path d="M 256 144 L 288 180 H 224 Z" fill="#38bdf8" />
+  </g>
+
+  <!-- Brand Subtext -->
+  <text x="256" y="420" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="800" font-size="32" letter-spacing="6">MAK UNITED</text>
+  <text x="256" y="445" text-anchor="middle" fill="#38bdf8" font-family="'Inter', sans-serif" font-weight="600" font-size="16" letter-spacing="3">LOGISTICS & TRADING</text>
+</svg>

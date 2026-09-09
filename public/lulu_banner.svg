@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="luluBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="emeraldGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#luluBg)" />
+
+  <!-- Hypermarket Store & Python Scraper Analytics Graphic (Right Side) -->
+  <g transform="translate(720, 140)">
+    <!-- Terminal Code Window overlaying Retail Cart -->
+    <rect x="20" y="40" width="340" height="260" rx="20" fill="#022c22" stroke="#34d399" stroke-width="2" />
+    <circle cx="50" cy="70" r="6" fill="#f87171" />
+    <circle cx="70" cy="70" r="6" fill="#fbbf24" />
+    <circle cx="90" cy="70" r="6" fill="#34d399" />
+    <text x="115" y="74" fill="#a7f3d0" font-family="'Courier New', monospace" font-size="12" font-weight="700">lulu_scraper.py</text>
+    
+    <!-- Scraper Code Lines -->
+    <text x="40" y="115" fill="#34d399" font-family="'Courier New', monospace" font-size="12">> import requests, BeautifulSoup</text>
+    <text x="40" y="140" fill="#a7f3d0" font-family="'Courier New', monospace" font-size="12">> target = "https://luluhypermarket.com"</text>
+    <text x="40" y="165" fill="#fef08a" font-family="'Courier New', monospace" font-size="12">> extracted: 45,000+ Items</text>
+    <text x="40" y="190" fill="#ffffff" font-family="'Courier New', monospace" font-size="12">> prices, stock_levels, deals</text>
+    <text x="40" y="225" fill="#6ee7b7" font-family="'Courier New', monospace" font-size="12">[STATUS]: 100% SUCCESSFUL</text>
+
+    <!-- Shopping Cart Icon Overlay -->
+    <rect x="240" y="220" width="100" height="70" rx="16" fill="#059669" stroke="#ffffff" stroke-width="2" />
+    <circle cx="270" cy="310" r="12" fill="#fef08a" />
+    <circle cx="310" cy="310" r="12" fill="#fef08a" />
+  </g>
+
+  <!-- Left Main Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#emeraldGold)" />
+  <text x="150" y="180" text-anchor="middle" fill="#064e3b" font-family="'Inter', sans-serif" font-weight="900" font-size="28">L</text>
+
+  <text x="200" y="165" fill="url(#emeraldGold)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">ENTERPRISE RETAIL & WEB SCRAPING</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="30">LULU HYPERMARKET</text>
+
+  <text x="120" y="260" fill="#a7f3d0" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Regional Marketing & Catalogue Scraper</text>
+  <text x="120" y="295" fill="#ecfdf5" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Executed regional digital campaigns and built Python web scrapers extracting
+  </text>
+  <text x="120" y="318" fill="#ecfdf5" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Lulu's full product catalog for real-time competitive price analysis in Kuwait.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#emeraldGold)" stroke-opacity="0.4" />
+    <text x="16" y="32" fill="url(#emeraldGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">SCRAPING</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Python</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#emeraldGold)" stroke-opacity="0.4" />
+    <text x="171" y="32" fill="url(#emeraldGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">DATA</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Pricing</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#emeraldGold)" stroke-opacity="0.4" />
+    <text x="326" y="32" fill="url(#emeraldGold)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">RETAIL</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Hypermarket</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="230" height="44" rx="12" fill="url(#emeraldGold)" />
+  <text x="235" y="507" text-anchor="middle" fill="#064e3b" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">LULU DIGITAL CAMPAIGNS</text>
+</svg>

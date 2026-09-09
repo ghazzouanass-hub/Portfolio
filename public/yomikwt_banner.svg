@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="yomiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082f49" />
+      <stop offset="50%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="goldBath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#yomiBg)" />
+
+  <!-- Soft Water Wave Accent Background Lines -->
+  <path d="M 0 300 Q 300 200 600 300 T 1200 300" stroke="#38bdf8" stroke-width="1.5" opacity="0.2" fill="none" />
+  <path d="M 0 380 Q 300 280 600 380 T 1200 380" stroke="#38bdf8" stroke-width="1.5" opacity="0.15" fill="none" />
+
+  <!-- Folded Luxury Towel & Bathrobe Stack Illustration (Right Side Graphic) -->
+  <g transform="translate(740, 160)">
+    <!-- Bottom Stacked Bath Towel -->
+    <rect x="20" y="220" width="280" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Golden Trim Thread Line -->
+    <line x1="40" y1="260" x2="280" y2="260" stroke="url(#goldBath)" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Middle Stacked Towel -->
+    <rect x="40" y="150" width="240" height="55" rx="14" fill="#38bdf8" stroke="#0284c7" stroke-width="2" />
+    <!-- Top Rolled Spa Towel -->
+    <rect x="70" y="80" width="180" height="50" rx="20" fill="url(#goldBath)" stroke="#ca8a04" stroke-width="2" />
+    <circle cx="230" cy="105" r="20" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+  </g>
+
+  <!-- Left Main Content Glass Card -->
+  <rect x="80" y="100" width="580" height="475" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Emblem -->
+  <rect x="120" y="140" width="60" height="60" rx="18" fill="url(#goldBath)" />
+  <path d="M 140 180 C 130 150 170 150 160 180" stroke="#082f49" stroke-width="5" stroke-linecap="round" fill="none" />
+
+  <text x="200" y="165" fill="url(#goldBath)" font-family="'Inter', sans-serif" font-weight="800" font-size="13" letter-spacing="3">KUWAIT LUXURY BATHWARE BRAND</text>
+  <text x="200" y="195" fill="#ffffff" font-family="'Playfair Display', serif" font-weight="900" font-size="32">YOMI KWT</text>
+
+  <text x="120" y="260" fill="#bae6fd" font-family="'Inter', sans-serif" font-weight="600" font-size="20">Egyptian Cotton Towels & Bathrobes</text>
+  <text x="120" y="295" fill="#e0f2fe" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    Premium Kuwait bathware brand producing plush 700 GSM cotton towels,
+  </text>
+  <text x="120" y="318" fill="#e0f2fe" font-family="'Inter', sans-serif" font-weight="400" font-size="14">
+    velour shower robes, spa lounge wear, and automated e-commerce funnels.
+  </text>
+
+  <!-- Highlight Cards -->
+  <g transform="translate(120, 360)">
+    <rect x="0" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#goldBath)" stroke-opacity="0.4" />
+    <text x="16" y="32" fill="url(#goldBath)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">PRODUCTS</text>
+    <text x="16" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Towels</text>
+
+    <rect x="155" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#goldBath)" stroke-opacity="0.4" />
+    <text x="171" y="32" fill="url(#goldBath)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">APPAREL</text>
+    <text x="171" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Bathrobes</text>
+
+    <rect x="310" y="0" width="140" height="85" rx="16" fill="#000000" fill-opacity="0.3" stroke="url(#goldBath)" stroke-opacity="0.4" />
+    <text x="326" y="32" fill="url(#goldBath)" font-family="'Inter', sans-serif" font-size="11" font-weight="700">REGION</text>
+    <text x="326" y="62" fill="#ffffff" font-family="'Inter', sans-serif" font-size="18" font-weight="800">Kuwait</text>
+  </g>
+
+  <!-- Tag -->
+  <rect x="120" y="480" width="220" height="44" rx="12" fill="url(#goldBath)" />
+  <text x="230" y="507" text-anchor="middle" fill="#082f49" font-family="'Inter', sans-serif" font-weight="800" font-size="12" letter-spacing="1">YOMI KWT BATHWARE</text>
+</svg>

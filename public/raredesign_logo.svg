@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="silverAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#rareGrad)" stroke="#334155" stroke-width="4" />
+
+  <!-- Monogram Luxury 'R' -->
+  <g transform="translate(156, 110)">
+    <!-- Main Vertical Bar -->
+    <rect x="30" y="20" width="36" height="220" fill="url(#silverAccent)" rx="4" />
+    <!-- Top Loop -->
+    <path d="M 66 20 H 130 C 170 20 180 50 180 80 C 180 110 160 130 120 130 H 66 Z" fill="none" stroke="url(#silverAccent)" stroke-width="32" stroke-linejoin="round" />
+    <!-- Diagonal Leg -->
+    <path d="M 100 120 L 175 240 H 130 L 66 130 Z" fill="url(#silverAccent)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="256" y="420" text-anchor="middle" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="32" letter-spacing="8">RARE DESIGN</text>
+  <text x="256" y="450" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-weight="600" font-size="14" letter-spacing="4">LUXURY STREETWEAR & APPAREL</text>
+</svg>

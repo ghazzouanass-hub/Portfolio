@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="agency_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="88" height="88" rx="22" fill="#0F172A" stroke="url(#agency_grad)" stroke-width="2"/>
+  
+  <!-- Megaphone / SMM Broadcast Icon -->
+  <path d="M28 42 L48 32 V68 L28 58 Z" fill="url(#agency_grad)"/>
+  <rect x="22" y="44" width="6" height="12" rx="2" fill="#F472B6"/>
+  <path d="M34 58 L36 72 H42 L40 58 Z" fill="#94A3B8"/>
+  
+  <!-- Sound / Broadcast waves -->
+  <path d="M54 38 C58 42 60 46 60 50 C60 54 58 58 54 62" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M64 30 C70 36 74 43 74 50 C74 57 70 64 64 70" stroke="#818CF8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="72" cy="28" r="4" fill="#F43F5E"/>
+</svg>

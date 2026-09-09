@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="wp_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="woo_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect x="6" y="6" width="88" height="88" rx="22" fill="#0F172A" stroke="url(#wp_grad)" stroke-width="2"/>
+  
+  <!-- Outer Ring -->
+  <circle cx="50" cy="50" r="32" stroke="url(#wp_grad)" stroke-width="3" fill="none"/>
+  
+  <!-- WordPress W stylized letter -->
+  <path d="M28 34 L38 66 L44 48 L49 60 L58 34" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- WooCommerce Shopping Bag / Bolt Accent badge -->
+  <circle cx="72" cy="72" r="14" fill="url(#woo_grad)" stroke="#0F172A" stroke-width="2"/>
+  <path d="M68 68 L76 68 L74 77 L70 77 Z" fill="#FFFFFF"/>
+  <path d="M70 68 V66 C70 64.5 71 63.5 72 63.5 C73 63.5 74 64.5 74 66 V68" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</svg>
