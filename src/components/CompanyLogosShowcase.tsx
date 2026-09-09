@@ -221,6 +221,13 @@ export const CompanyLogosShowcase: React.FC = () => {
       } catch {}
     }
     loadLogos();
+
+    // Re-load when media backup hydration completes
+    const handleStorageUpdate = () => {
+      loadLogos();
+    };
+    window.addEventListener('portfolio_storage_updated', handleStorageUpdate);
+    return () => window.removeEventListener('portfolio_storage_updated', handleStorageUpdate);
   }, []);
 
   const filteredCompanies = activeTab === 'all' 
