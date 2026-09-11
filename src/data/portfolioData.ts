@@ -571,10 +571,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Full-time',
     category: 'management',
     highlights: [
-      'Managed daily store operations, inventory control, staff scheduling, and visual merchandising for a curated antique and decoration furniture showroom.',
-      'Drove sales of antique furniture, decorative home accessories, and handcrafted pieces to international and local clientele in Arabic, French, and English.'
+      'Managed full store operations, inventory control, and a team of staff — consistently exceeding monthly sales targets.',
+      'Closed high-value deals with international tourists and local B2B clients, negotiating prices and upselling premium decoration pieces.',
+      'Built long-term client relationships driving 40%+ repeat purchase rate through personalized service and follow-up.',
+      'Conducted multilingual sales (Arabic, French, English) with strong consultative selling, achieving top conversion rates in the Marrakech Medina district.'
     ],
-    skillsUsed: ['Retail Operations', 'Multilingual Sales', 'Merchandising', 'Customer Relations']
+    skillsUsed: ['Sales & Revenue Growth', 'Client Negotiation', 'Upselling & Cross-selling', 'Team Management', 'Multilingual Sales', 'Customer Retention']
   }
 ];
 
