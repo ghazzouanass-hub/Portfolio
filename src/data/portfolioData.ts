@@ -450,19 +450,19 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     id: 'exp-mak',
-    role: 'Social Media Manager & Marketing Specialist',
-    company: 'MAK United',
+    role: 'Marketing Strategist & Analyst',
+    company: 'MAK United & Varsity',
     companyLogo: '/makunited_logo.svg',
-    period: '2026 – Present',
-    type: 'Full-time',
+    period: '2026 (3-Month Project)',
+    type: 'Project-Based',
     category: 'management',
     highlights: [
-      'Grew brand social media presence by 40%+ within first quarter through targeted content strategies and audience engagement.',
-      'Structured high-ROAS ad funnels across Meta & Google, achieving 3.5x average return on ad spend.',
-      'Managing 4+ social channels (Instagram, LinkedIn, TikTok, Meta Ads) with weekly performance reporting to leadership.',
-      'Leveraging AI-driven workflows and Adobe Illustrator design to produce 20+ branded assets per month for rapid campaign scaling.'
+      'Conducted full competitive analysis using SEMrush and multiple analytics platforms, mapping all direct competitors for both MAK United and Varsity.',
+      'Delivered comprehensive PDF marketing strategy reports covering ads strategy, content roadmap, and 6-month execution plan for both companies.',
+      'Audited websites and provided detailed development recommendations for UX improvements, SEO optimization, and conversion funnel architecture.',
+      'Designed paid media strategy across Google & Meta with targeting frameworks, budget allocation models, and projected KPIs for the next 6 months.'
     ],
-    skillsUsed: ['Social Media Management', 'Meta Ads', 'Content Strategy', 'Marketing Strategy', 'AI Tools', 'Brand Growth']
+    skillsUsed: ['SEMrush', 'Competitive Analysis', 'Marketing Strategy', 'Google Ads', 'Meta Ads', 'Website Audit', 'PDF Reporting']
   },
   {
     id: 'exp-1',
@@ -473,12 +473,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Contract',
     category: 'freelance',
     highlights: [
-      'Simultaneously managed digital marketing for 4 fashion and lifestyle brands, driving 25%+ combined engagement growth.',
-      'Launched and optimized paid ad campaigns on Meta & Google with a combined monthly budget of $5K+, achieving 2.8x ROAS.',
-      'Directed e-commerce product photography and produced 50+ visual brand assets in Adobe Illustrator.',
-      'Delivered monthly ROI dashboards to founders, resulting in 15% budget reallocation toward high-performing channels.'
+      'Managed digital marketing for 4 fashion brands simultaneously — drove Yomikwt to complete sold-out status.',
+      'Increased Rare Design ROI by more than 4x through optimized Meta & Google ad funnels and audience targeting.',
+      'Set up and launched paid ad campaigns for Rare Design and Fennec from scratch, building full campaign structures.',
+      'Fully set up and optimized Google My Business (GMB) profiles for Rare Design and Fennec, boosting local discovery.'
     ],
-    skillsUsed: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'Influencer Marketing', 'Adobe Illustrator', 'E-commerce Photography']
+    skillsUsed: ['Meta Ads', 'Google Ads', 'GMB Optimization', 'E-commerce', 'Adobe Illustrator', 'Multi-Brand Management']
   },
   {
     id: 'exp-2',
@@ -489,12 +489,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Full-time',
     category: 'management',
     highlights: [
-      'Increased Google Maps reviews from 5 to 200+ across 3 business accounts, boosting local SEO visibility by 300%.',
-      'Managed end-to-end Meta ad campaigns generating 50+ qualified B2B leads per month for wood & melamine products.',
-      'Created integrated digital and print marketing campaigns, reducing customer acquisition cost by 20%.',
-      'Delivered monthly executive performance reports, leading to 30% ad budget optimization.'
+      'Grew Google Maps reviews from 7 to 200+ with fully optimized Google My Business profiles across 3 accounts.',
+      'Generated 20,000+ leads through social media campaigns and bulk WhatsApp outreach strategies.',
+      'Redesigned the physical showroom layout to improve foot traffic and customer experience, driving in-store conversions.',
+      'Produced AI-generated product videos and high-quality visual content, elevating the brand to premium positioning.',
+      'Managed end-to-end Meta advertising campaigns and social media management for B2B customer acquisition.'
     ],
-    skillsUsed: ['Google Maps Local SEO', 'Meta Ads', 'Social Media Management', 'Campaign Planning', 'Print & Digital Strategy', 'Reporting']
+    skillsUsed: ['Google Maps/GMB', 'Meta Ads', 'WhatsApp Marketing', 'AI Video Production', 'Showroom Design', 'Lead Generation']
   },
   {
     id: 'exp-3',
@@ -505,9 +506,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Hybrid',
     category: 'enterprise',
     highlights: [
-      'Managed digital marketing campaigns across Google & Meta for one of the Middle East\'s largest retail chains (200+ stores).',
-      'Built custom Python web scraper extracting 10,000+ product SKUs for competitive pricing analysis, saving 20+ hours/week of manual work.',
-      'Executed technical SEO audits and keyword research, improving organic search rankings for 50+ priority product categories.',
+      'Built custom Python web scraper extracting 100,000+ product SKUs for competitive pricing analysis across the full Lulu catalogue.',
+      'Set up a full-year content calendar and automated social media posts for the company\'s product lines.',
+      'Served as final approver for the weekly promotional booklet — reviewing, approving, or declining before print distribution.',
+      'Executed technical SEO audits and keyword research, improving organic search rankings for priority product categories.',
       'Delivered weekly campaign performance dashboards to executive leadership with actionable optimization recommendations.'
     ],
     skillsUsed: ['Google Ads', 'Meta Ads', 'Python Web Scraping', 'SEO Audits', 'Data Analytics', 'Retail Marketing']
@@ -535,27 +537,14 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Founder',
     category: 'founder',
     highlights: [
-      'Built entire e-commerce platform from zero — domain, custom code, design, and launch — generating $100K+ in lifetime revenue.',
-      'Designed full brand identity in Adobe Illustrator and wrote 200+ SEO product listings driving organic traffic.',
-      'Managed Google Ads & Meta Ads funnels with 3x+ ROAS, acquiring 2,000+ customers across global markets.',
-      'Implemented Cloudflare security, automated payment processing, and Python order-handling scripts reducing ops time by 60%.'
+      'Built the entire e-commerce platform from zero — domain, code, branding, product design, and website design — achieving first sale through organic SEO alone.',
+      'Single-handedly managed all operations: product listings, brand identity in Adobe Illustrator, inventory, customer service, and fulfillment.',
+      'Drove customer acquisition through SEO copywriting, Google Ads, Meta Ads, and automated email funnels.',
+      'Implemented Cloudflare security, payment processing integration, and Python automation scripts for order handling.'
     ],
-    skillsUsed: ['E-commerce Platform', 'Adobe Illustrator', 'SEO Copywriting', 'Paid Ads', 'Python Scripts', 'Customer Success']
+    skillsUsed: ['E-commerce Platform', 'Adobe Illustrator', 'SEO Copywriting', 'Paid Ads', 'Python Scripts', 'Full Operations']
   },
-  {
-    id: 'exp-6',
-    role: 'Founder & Platform Operator',
-    company: 'Smmcent LTD',
-    companyLogo: '/smmcent_logo.svg',
-    period: '2020 – 2024',
-    type: 'Founder',
-    category: 'founder',
-    highlights: [
-      'Founded and scaled SaaS platform selling social media marketing services to 500+ global clients.',
-      'Built full-stack web platform, integrated 3rd-party APIs for automated order dispatch, and managed payment infrastructure.'
-    ],
-    skillsUsed: ['Web Development', 'UI/UX', 'Digital Marketing', 'API Integration', 'Operations']
-  },
+  
   {
     id: 'exp-7',
     role: 'Project Manager',
@@ -572,18 +561,19 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     id: 'exp-8',
-    role: 'Graphic Designer & Print Specialist',
+    role: 'Graphic Designer & Print Production Manager',
     company: 'Support (Print & Engraving)',
     companyLogo: '/supportprint_logo.svg',
     period: '2021 (1 Year)',
     type: 'Full-time',
     category: 'enterprise',
     highlights: [
-      'Designed logos, marketing collateral, and print-ready artwork in Adobe Illustrator.',
-      'Managed pre-press workflows, color calibration, and quality assurance.',
-      'Operated Roland large-format printers and Roland MPX-90 impact printers for personalized metal, acrylic, and photo engraving.'
+      'Managed staff operations and all printing machines including Roland large-format plotters and Roland MPX-90 metal engravers.',
+      'Created graphic charts and brand identity packages for luxury companies in Adobe Illustrator.',
+      'Designed and produced all types of printed materials: business cards, banners, vehicle wraps, signage, and engraved items.',
+      'Handled pre-press workflows, color calibration, and quality assurance for high-end print production.'
     ],
-    skillsUsed: ['Adobe Illustrator', 'Pre-press', 'Roland Printers', 'Photo Engraving', 'Color Accuracy']
+    skillsUsed: ['Adobe Illustrator', 'Staff Management', 'Roland Printers', 'Pre-press', 'Luxury Branding', 'Print Production']
   },
   {
     id: 'exp-9',

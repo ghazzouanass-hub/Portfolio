@@ -13,7 +13,7 @@ const RESUME_CERT_IDS = ['c9', 'c11', 'c34', 'c1', 'c41', 'c8'];
 
 // Experience IDs to show in each section
 const PROFESSIONAL_IDS = ['exp-mak', 'exp-1', 'exp-2', 'exp-3'];
-const ENTREPRENEURIAL_IDS = ['exp-5', 'exp-6'];
+const ENTREPRENEURIAL_IDS = ['exp-5'];
 const EARLIER_IDS = ['exp-7', 'exp-8'];
 // Excluded: exp-4 (2-month agency), exp-9 (antiques store)
 
