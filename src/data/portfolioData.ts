@@ -553,7 +553,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     companyLogo: '/supportprint_logo.svg',
     period: '2021 (1 Year)',
     type: 'Full-time',
-    category: 'enterprise',
+    category: 'management',
     highlights: [
       'Managed staff operations and all printing machines including Roland large-format plotters and Roland MPX-90 metal engravers.',
       'Created graphic charts and brand identity packages for luxury companies in Adobe Illustrator.',
