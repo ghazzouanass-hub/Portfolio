@@ -8,8 +8,19 @@ interface ResumeModalProps {
   onClose: () => void;
 }
 
-// Top certifications to feature on resume (official/high-value only)
-const RESUME_CERT_IDS = ['c9', 'c11', 'c34', 'c1', 'c41', 'c8'];
+// Top certifications to feature on resume (official/high-value platforms only)
+const RESUME_CERT_IDS = [
+  'c9',   // Google Ads Search Certification — Google Certified
+  'c11',  // Meta Blueprint — Meta
+  'c34',  // Diploma in Graphic Design — OFPPT State Diploma
+  'c51',  // Microsoft Office 2021 Pro Plus — Microsoft
+  'c6',   // Leading with Innovation in the Age of AI — LinkedIn Learning
+  'c46',  // Strategic Thinking for Growth Executives — LinkedIn Learning
+  'c47',  // Super Connecting: Secret of Professional Networking — LinkedIn Learning
+  'c48',  // What They Don't Teach You at Harvard Business School — LinkedIn Learning
+  'c1',   // AI Automation & Prompt Engineering MasterClass
+  'c41',  // Python Web Scraping & Data Extraction
+];
 
 // Experience IDs to show in each section
 const PROFESSIONAL_IDS = ['exp-mak', 'exp-1', 'exp-2', 'exp-3'];
