@@ -115,20 +115,7 @@ export const COMPANY_LIST: ImpactedCompany[] = [
     badgeColor: 'bg-rose-500/10 text-rose-600 dark:text-rose-300 border-rose-500/20',
     highlights: ['100% Built In-House Platform', 'Automated Digital Fulfillment', 'Trustpilot Verified Brand']
   },
-  {
-    id: 'smmcent',
-    name: 'Smmcent LTD',
-    role: 'Founder & SaaS Operations Lead',
-    category: 'founder',
-    categoryLabel: 'SaaS & Automation',
-    badge: 'Global SMM Platform',
-    icon: Share2,
-    logoUrl: '/smmcent_logo.svg',
-    gradient: 'from-purple-500/20 to-indigo-500/20 text-purple-600 dark:text-purple-400',
-    borderHover: 'hover:border-purple-500/50 hover:shadow-purple-500/10',
-    badgeColor: 'bg-purple-500/10 text-purple-600 dark:text-purple-300 border-purple-500/20',
-    highlights: ['API Integration & Order Dispatch', 'Global Client Base Scaling', 'Automated Payment Systems']
-  },
+
   {
     id: 'national-arabic',
     name: 'National Arabic Company',

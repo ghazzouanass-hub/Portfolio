@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Bot, FileText, Globe2, ShieldCheck, Zap, PhoneCall, Camera, Check } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ArrowRight, Bot, FileText, Globe2, ShieldCheck, Zap, PhoneCall } from 'lucide-react';
 import { PERSONAL_INFO, CONTACT_INFO } from '../data/portfolioData';
 import { useLanguage } from '../context/LanguageContext';
 import { NeuralNetworkCanvas } from './NeuralNetworkCanvas';
-import { getPersistentItem, setPersistentItem, compressImage } from '../lib/imageStorage';
+import { getPersistentItem } from '../lib/imageStorage';
 
 interface HeroProps {
   onOpenAiModal: () => void;
@@ -17,33 +17,8 @@ export const Hero: React.FC<HeroProps> = ({
   onOpenContactModal
 }) => {
   const [avatar, setAvatar] = useState<string>(PERSONAL_INFO.avatarUrl);
-  const [isUploading, setIsUploading] = useState(false);
-  const [uploadSuccess, setUploadSuccess] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const { t } = useLanguage();
 
-  const handleImageFile = async (file: File) => {
-    if (!file) return;
-    try {
-      setIsUploading(true);
-      const compressed = await compressImage(file, 2000, 2000, 0.92);
-      if (compressed) {
-        setAvatar(compressed);
-        await setPersistentItem('custom_anass_avatar', compressed);
-        setUploadSuccess(true);
-        setTimeout(() => setUploadSuccess(false), 3000);
-      }
-    } catch (err) {
-      console.error('Failed to process image:', err);
-    } finally {
-      setIsUploading(false);
-    }
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) handleImageFile(file);
-  };
 
   useEffect(() => {
     const loadAvatar = async () => {
@@ -190,23 +165,8 @@ export const Hero: React.FC<HeroProps> = ({
 
               {/* Profile Image Frame */}
               <div 
-                className="w-full h-full rounded-2xl overflow-hidden relative bg-slate-100 dark:bg-black/40 border border-slate-900/10 dark:border-white/10 group cursor-pointer"
-                onClick={() => fileInputRef.current?.click()}
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={(e) => {
-                  e.preventDefault();
-                  const file = e.dataTransfer.files?.[0];
-                  if (file) handleImageFile(file);
-                }}
-                title="Click or drag a photo to update profile picture"
+                className="w-full h-full rounded-2xl overflow-hidden relative bg-slate-100 dark:bg-black/40 border border-slate-900/10 dark:border-white/10 group"
               >
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                  className="hidden"
-                />
 
                 <img
                   src={avatar}
@@ -217,25 +177,6 @@ export const Hero: React.FC<HeroProps> = ({
 
                 {/* Subtle gradient vignette over image */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 dark:from-[#050508] via-transparent to-transparent opacity-85 pointer-events-none" />
-
-                {/* Interactive Change Photo Hover Pill */}
-                <div className="absolute top-4 right-4 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 text-white border border-white/20 text-[11px] font-mono font-bold shadow-xl backdrop-blur-md">
-                    {uploadSuccess ? (
-                      <>
-                        <Check className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>Updated!</span>
-                      </>
-                    ) : isUploading ? (
-                      <span className="animate-pulse">Uploading...</span>
-                    ) : (
-                      <>
-                        <Camera className="w-3.5 h-3.5 text-cyan-400" />
-                        <span>Change Photo</span>
-                      </>
-                    )}
-                  </div>
-                </div>
 
                 {/* Name Badge Overlay inside Image */}
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/85 dark:bg-slate-950/85 backdrop-blur-xl border border-blue-500/30 dark:border-cyan-500/30 shadow-xl">

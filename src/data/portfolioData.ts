@@ -514,20 +514,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     ],
     skillsUsed: ['Google Ads', 'Meta Ads', 'Python Web Scraping', 'SEO Audits', 'Data Analytics', 'Retail Marketing']
   },
-  {
-    id: 'exp-4',
-    role: 'Assistant Manager - Social Media Agency',
-    company: 'Social Media Agency (Kuwait)',
-    companyLogo: '/smm_agency_logo.svg',
-    period: '2025 (2 Months Contract)',
-    type: 'Contract',
-    category: 'freelance',
-    highlights: [
-      'Managed client accounts and maintained social media content calendars across multiple accounts.',
-      'Ensured creative deliverables remained on-brand and hit strict deadlines.'
-    ],
-    skillsUsed: ['Account Management', 'Content Calendars', 'Quality Control', 'SMM']
-  },
+
   {
     id: 'exp-5',
     role: 'Founder & E-commerce Operator',
@@ -577,15 +564,15 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     id: 'exp-9',
-    role: 'Store Manager & Antiques Specialist',
-    company: 'Artisanal Retail Store & Antiques Bazaar (Marrakech Medina)',
+    role: 'Store Manager & Sales Specialist',
+    company: 'Antique & Decoration Furniture Store (Marrakech)',
     companyLogo: '/marrakech_art_logo.svg',
     period: '2015 – 2020 (5 Years)',
     type: 'Full-time',
     category: 'management',
     highlights: [
-      'Ran operations, inventory, staff scheduling, and merchandising in Marrakech Old Souq.',
-      'Sold to international tourists in Arabic, French, and English, driving repeat visits.'
+      'Managed daily store operations, inventory control, staff scheduling, and visual merchandising for a curated antique and decoration furniture showroom.',
+      'Drove sales of antique furniture, decorative home accessories, and handcrafted pieces to international and local clientele in Arabic, French, and English.'
     ],
     skillsUsed: ['Retail Operations', 'Multilingual Sales', 'Merchandising', 'Customer Relations']
   }
