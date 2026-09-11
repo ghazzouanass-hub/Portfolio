@@ -8,6 +8,15 @@ interface ResumeModalProps {
   onClose: () => void;
 }
 
+// Top certifications to feature on resume (official/high-value only)
+const RESUME_CERT_IDS = ['c9', 'c11', 'c34', 'c1', 'c41', 'c8'];
+
+// Experience IDs to show in each section
+const PROFESSIONAL_IDS = ['exp-mak', 'exp-1', 'exp-2', 'exp-3'];
+const ENTREPRENEURIAL_IDS = ['exp-5', 'exp-6'];
+const EARLIER_IDS = ['exp-7', 'exp-8'];
+// Excluded: exp-4 (2-month agency), exp-9 (antiques store)
+
 export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
@@ -18,30 +27,42 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
     window.print();
   };
 
+  const professionalExp = WORK_EXPERIENCE.filter(e => PROFESSIONAL_IDS.includes(e.id));
+  const entrepreneurialExp = WORK_EXPERIENCE.filter(e => ENTREPRENEURIAL_IDS.includes(e.id));
+  const earlierExp = WORK_EXPERIENCE.filter(e => EARLIER_IDS.includes(e.id));
+  const featuredCerts = CERTIFICATIONS.filter(c => RESUME_CERT_IDS.includes(c.id));
+  const remainingCertCount = CERTIFICATIONS.length - featuredCerts.length;
+
   const fullResumeText = `
 ANASS GHAZZOU
-${CONTACT_INFO.email} | USA: ${CONTACT_INFO.phoneUS} | WhatsApp: ${CONTACT_INFO.phoneKuwait} / ${CONTACT_INFO.phoneMorocco} | ${CONTACT_INFO.linkedIn}
-Portfolio: https://anassghazzou.vercel.app
+Digital Marketing Specialist | Kuwait City, Kuwait | Open to GCC & Remote
+${CONTACT_INFO.email} | USA: ${CONTACT_INFO.phoneUS} | WhatsApp: ${CONTACT_INFO.phoneKuwait} / ${CONTACT_INFO.phoneMorocco}
+LinkedIn: ${CONTACT_INFO.linkedIn} | Portfolio: https://anassghazzou.vercel.app
 
 PROFESSIONAL SUMMARY
 ${PERSONAL_INFO.summary}
 
-WORK EXPERIENCE
-${WORK_EXPERIENCE.map(exp => `
-${exp.role} - ${exp.company} (${exp.period}) [${exp.type}]
-Highlights:
-${exp.highlights.map(h => `- ${h}`).join('\n')}
-Skills: ${exp.skillsUsed.join(', ')}
+PROFESSIONAL EXPERIENCE
+${professionalExp.map(exp => `
+${exp.role} — ${exp.company} (${exp.period}) [${exp.type}]
+${exp.highlights.map(h => `• ${h}`).join('\n')}
 `).join('\n')}
 
-CERTIFICATIONS & TRAINING
-${CERTIFICATIONS.map(c => `- ${c.title} (${c.issuer}, ${c.year})`).join('\n')}
+ENTREPRENEURIAL VENTURES
+${entrepreneurialExp.map(exp => `
+${exp.role} — ${exp.company} (${exp.period})
+${exp.highlights.map(h => `• ${h}`).join('\n')}
+`).join('\n')}
+
+KEY CERTIFICATIONS
+${featuredCerts.map(c => `• ${c.title} — ${c.issuer} (${c.year})`).join('\n')}
++ ${remainingCertCount} additional professional development courses completed
 
 EDUCATION
-${EDUCATION_LIST.map(e => `- ${e.degree} | ${e.institution} (${e.period})`).join('\n')}
+${EDUCATION_LIST.map(e => `• ${e.degree} | ${e.institution} (${e.period})`).join('\n')}
 
 LANGUAGES
-${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
+${LANGUAGES.map(l => `• ${l.name}: ${l.level}`).join('\n')}
   `;
 
   const handleCopyText = () => {
@@ -49,6 +70,44 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  const renderExpEntry = (exp: typeof WORK_EXPERIENCE[0], compact = false) => (
+    <div key={exp.id} className={`border-l-2 border-blue-500/40 dark:border-blue-400/30 pl-4 print:border-gray-400 print:break-inside-avoid ${compact ? 'py-1' : ''}`}>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
+        <h3 className="text-sm font-bold text-slate-900 dark:text-white print:text-black leading-tight">
+          {t(`exp.${exp.id}.role`, exp.role)}
+        </h3>
+        <div className="flex items-center gap-2 shrink-0">
+          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 border border-blue-500/20 font-mono font-bold print:bg-gray-100 print:text-gray-700 print:border-gray-300">
+            {exp.type}
+          </span>
+          <span className="text-xs font-mono text-blue-600 dark:text-blue-300 print:text-gray-700 font-semibold whitespace-nowrap">
+            {t(`exp.${exp.id}.period`, exp.period)}
+          </span>
+        </div>
+      </div>
+      <p className="text-xs text-slate-500 dark:text-white/50 font-semibold mt-0.5 print:text-gray-600">
+        {t(`exp.${exp.id}.company`, exp.company)}
+      </p>
+      <ul className="mt-2 space-y-1 text-xs text-slate-700 dark:text-white/75 print:text-gray-800">
+        {exp.highlights.map((h, i) => (
+          <li key={i} className="flex items-start gap-1.5">
+            <span className="text-blue-500 dark:text-blue-400 mt-0.5 shrink-0">▸</span>
+            <span>{t(`exp.${exp.id}.h${i}`, h)}</span>
+          </li>
+        ))}
+      </ul>
+      {!compact && exp.skillsUsed.length > 0 && (
+        <div className="flex flex-wrap gap-1 mt-2">
+          {exp.skillsUsed.map((skill, i) => (
+            <span key={i} className="text-[9px] px-1.5 py-0.5 rounded-md bg-slate-200/80 dark:bg-white/5 text-slate-600 dark:text-white/50 font-mono print:bg-gray-100 print:text-gray-600">
+              {skill}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
@@ -100,18 +159,19 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
         {/* Formatted Resume Body */}
         <div className="space-y-7 bg-slate-100 dark:bg-black/40 p-6 sm:p-8 rounded-2xl border border-black/10 dark:border-white/10 print:bg-white print:text-black print:p-0 print:border-none">
           
-          {/* ═══════════════ PAGE 1: Header + Summary + Experience ═══════════════ */}
-          
-          {/* Resume Header */}
+          {/* ═══════════ HEADER ═══════════ */}
           <div className="border-b-2 border-blue-600/30 dark:border-blue-400/30 pb-5 print:border-black/30">
             <h1 className="text-3xl sm:text-4xl font-black font-display text-slate-900 dark:text-white print:text-black tracking-tight">
               ANASS GHAZZOU
             </h1>
-            <p className="text-blue-600 dark:text-blue-400 font-mono text-xs sm:text-sm mt-1.5 print:text-gray-800 uppercase tracking-[0.15em] font-bold">
+            <p className="text-blue-600 dark:text-blue-400 font-mono text-xs sm:text-sm mt-1 print:text-gray-800 uppercase tracking-[0.15em] font-bold">
               {t('hero.role')}
             </p>
+            <p className="text-xs text-slate-500 dark:text-white/50 font-medium mt-0.5">
+              Kuwait City, Kuwait • Open to GCC & Remote Opportunities
+            </p>
             
-            {/* Contact Info Grid */}
+            {/* Contact Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-slate-600 dark:text-white/70 mt-4 print:text-gray-700">
               <span className="flex items-center gap-1.5">
                 <Mail className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
@@ -127,7 +187,7 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
               </span>
               <span className="flex items-center gap-1.5">
                 <Linkedin className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
-                <a href={CONTACT_INFO.linkedIn} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">linkedin.com/in/anass-ghazzou</a>
+                <a href={CONTACT_INFO.linkedIn} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">linkedin.com/in/anass-ghazzou</a>
               </span>
               <span className="flex items-center gap-1.5 sm:col-span-2">
                 <Globe className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" />
@@ -139,7 +199,7 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
             </div>
           </div>
 
-          {/* Professional Summary */}
+          {/* ═══════════ SUMMARY ═══════════ */}
           <div>
             <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-2 font-bold print:text-black border-b border-blue-600/20 dark:border-blue-400/20 pb-1 print:border-black/20">
               {t('about.badge')}
@@ -149,55 +209,39 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
             </p>
           </div>
 
-          {/* Work Experience */}
+          {/* ═══════════ PROFESSIONAL EXPERIENCE ═══════════ */}
           <div>
             <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-4 font-bold print:text-black border-b border-blue-600/20 dark:border-blue-400/20 pb-1 print:border-black/20">
-              {t('experience.badge')}
+              Professional Experience
             </h2>
             <div className="space-y-5">
-              {WORK_EXPERIENCE.map((exp) => (
-                <div key={exp.id} className="border-l-2 border-blue-500/40 dark:border-blue-400/30 pl-4 print:border-gray-400 print:break-inside-avoid">
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-white print:text-black leading-tight">
-                      {t(`exp.${exp.id}.role`, exp.role)}
-                    </h3>
-                    <div className="flex items-center gap-2 shrink-0">
-                      <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 border border-blue-500/20 font-mono font-bold print:bg-gray-100 print:text-gray-700 print:border-gray-300">
-                        {exp.type}
-                      </span>
-                      <span className="text-xs font-mono text-blue-600 dark:text-blue-300 print:text-gray-700 font-semibold whitespace-nowrap">
-                        {t(`exp.${exp.id}.period`, exp.period)}
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-xs text-slate-500 dark:text-white/50 font-semibold mt-0.5 print:text-gray-600">
-                    {t(`exp.${exp.id}.company`, exp.company)}
-                  </p>
-                  <ul className="mt-2 space-y-1 text-xs text-slate-700 dark:text-white/75 print:text-gray-800">
-                    {exp.highlights.map((h, i) => (
-                      <li key={i} className="flex items-start gap-1.5">
-                        <span className="text-blue-500 dark:text-blue-400 mt-0.5 shrink-0">▸</span>
-                        <span>{t(`exp.${exp.id}.h${i}`, h)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {exp.skillsUsed.length > 0 && (
-                    <div className="flex flex-wrap gap-1 mt-2">
-                      {exp.skillsUsed.map((skill, i) => (
-                        <span key={i} className="text-[9px] px-1.5 py-0.5 rounded-md bg-slate-200/80 dark:bg-white/5 text-slate-600 dark:text-white/50 font-mono print:bg-gray-100 print:text-gray-600">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+              {professionalExp.map(exp => renderExpEntry(exp))}
             </div>
           </div>
 
-          {/* ═══════════════ PAGE 2: Education + Languages + Certifications ═══════════════ */}
-          
+          {/* ═══════════ ENTREPRENEURIAL VENTURES ═══════════ */}
+          <div>
+            <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-4 font-bold print:text-black border-b border-blue-600/20 dark:border-blue-400/20 pb-1 print:border-black/20">
+              Entrepreneurial Ventures
+            </h2>
+            <div className="space-y-5">
+              {entrepreneurialExp.map(exp => renderExpEntry(exp))}
+            </div>
+          </div>
+
+          {/* ═══════════ EARLIER CAREER ═══════════ */}
+          <div>
+            <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500 dark:text-white/40 mb-3 font-bold print:text-black border-b border-slate-300/30 dark:border-white/10 pb-1 print:border-black/20">
+              Earlier Career
+            </h2>
+            <div className="space-y-4">
+              {earlierExp.map(exp => renderExpEntry(exp, true))}
+            </div>
+          </div>
+
+          {/* ═══════════ PAGE 2 ═══════════ */}
           <div className="border-t-2 border-blue-600/20 dark:border-blue-400/20 pt-6 print:border-black/20 print:break-before-page">
+            
             {/* Education & Languages Side by Side */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-7">
               <div>
@@ -248,25 +292,53 @@ ${LANGUAGES.map(l => `- ${l.name}: ${l.level}`).join('\n')}
               </div>
             </div>
 
-            {/* Certifications List */}
-            <div>
+            {/* Key Certifications (curated) */}
+            <div className="mb-6">
               <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-3 font-bold print:text-black border-b border-blue-600/20 dark:border-blue-400/20 pb-1 print:border-black/20">
-                {t('certifications.badge')} ({CERTIFICATIONS.length}+)
+                Key Certifications
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 print:grid-cols-3">
-                {CERTIFICATIONS.map((c) => (
-                  <div key={c.id} className="flex items-start gap-1.5 p-1.5 rounded-lg bg-white/60 dark:bg-white/[0.03] border border-black/5 dark:border-white/5 print:bg-gray-50 print:border-gray-200 print:break-inside-avoid">
-                    <span className="text-blue-500 dark:text-blue-400 text-[10px] mt-0.5 shrink-0">✓</span>
-                    <div className="min-w-0">
-                      <p className="font-semibold text-slate-900 dark:text-white print:text-black text-[10px] leading-tight truncate" title={c.title}>{c.title}</p>
-                      <p className="text-[9px] text-slate-400 dark:text-white/40 print:text-gray-500 font-mono truncate">{c.issuer} · {c.year}</p>
+              <div className="space-y-1.5">
+                {featuredCerts.map((c) => (
+                  <div key={c.id} className="flex items-start gap-2 text-xs print:break-inside-avoid">
+                    <span className="text-blue-500 dark:text-blue-400 mt-0.5 shrink-0">✓</span>
+                    <div>
+                      <span className="font-semibold text-slate-900 dark:text-white print:text-black">{c.title}</span>
+                      <span className="text-slate-400 dark:text-white/40 print:text-gray-500"> — {c.issuer} ({c.year})</span>
                     </div>
                   </div>
                 ))}
               </div>
+              <p className="text-[10px] text-slate-400 dark:text-white/30 font-mono mt-2 italic print:text-gray-500">
+                + {remainingCertCount} additional professional development courses completed (AI, SEO, Design, WordPress, E-commerce)
+              </p>
             </div>
-          </div>
 
+            {/* Core Skills */}
+            <div>
+              <h2 className="text-[11px] font-mono uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 mb-3 font-bold print:text-black border-b border-blue-600/20 dark:border-blue-400/20 pb-1 print:border-black/20">
+                Core Skills
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                <div>
+                  <p className="font-bold text-slate-900 dark:text-white text-[10px] uppercase tracking-wider mb-1 print:text-black">Marketing</p>
+                  <p className="text-slate-600 dark:text-white/60 print:text-gray-700">Google Ads, Meta Ads, SEO/SEM, TikTok Ads, Email Marketing, CRO, Analytics</p>
+                </div>
+                <div>
+                  <p className="font-bold text-slate-900 dark:text-white text-[10px] uppercase tracking-wider mb-1 print:text-black">Technical</p>
+                  <p className="text-slate-600 dark:text-white/60 print:text-gray-700">Python (Web Scraping), WordPress/WooCommerce, Shopify, API Integration, Cloudflare</p>
+                </div>
+                <div>
+                  <p className="font-bold text-slate-900 dark:text-white text-[10px] uppercase tracking-wider mb-1 print:text-black">Design</p>
+                  <p className="text-slate-600 dark:text-white/60 print:text-gray-700">Adobe Illustrator, Brand Identity, UI/UX Fundamentals, Prepress & Print</p>
+                </div>
+                <div>
+                  <p className="font-bold text-slate-900 dark:text-white text-[10px] uppercase tracking-wider mb-1 print:text-black">AI & Automation</p>
+                  <p className="text-slate-600 dark:text-white/60 print:text-gray-700">Prompt Engineering, LLM Workflows, Generative AI Design, Process Automation</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>

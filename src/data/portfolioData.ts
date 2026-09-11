@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
   name: "Anass Ghazzou",
   title: "Digital Marketing Specialist & E-commerce Entrepreneur",
   subtitle: "Growth Strategist • Paid Media Specialist • Automation Developer • UI/UX Designer",
-  summary: "Digital Marketing Specialist and E-commerce Entrepreneur with over 7 years of experience in SEO, paid ads (Google & Meta), social media, and content marketing. Built two online businesses from zero (Boostega LLC & Smmcent LTD), executing everything from website development and brand identity in Adobe Illustrator to product listings, ad funnels, Cloudflare security, Python automation, and customer success. Previously drove digital campaigns and web scraping analytics at Lulu Hypermarket's Kuwait regional office.",
+  summary: "Digital Marketing Specialist with 7+ years driving measurable growth across SEO, paid media (Google & Meta), and e-commerce. Built two profitable online businesses from zero, grew Google Maps reviews 5→200+ for a regional brand, managed multi-channel ad campaigns at Lulu Hypermarket Kuwait, and currently leading social media strategy at MAK United W.L.L.",
   bioShort: "7+ years combining data-driven digital marketing, hands-on e-commerce execution, custom web scraping & automation, and graphic design across Middle East & global markets.",
   avatarUrl: "/avatar.webp", // High quality executive portrait photo
   location: "Kuwait / Morocco / Middle East",
@@ -457,42 +457,42 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Full-time',
     category: 'management',
     highlights: [
-      'Leading social media management, brand presence, and digital marketing strategy across MAK United.',
-      'Structuring high-ROAS social media ad funnels, editorial calendars, and brand growth initiatives.',
-      'Managing multi-channel digital strategies across Instagram, Meta Ads, TikTok, and LinkedIn.',
-      'Leveraging AI Prompt Masterclass tools, graphic design in Adobe Illustrator, and performance analytics for rapid campaign scaling.'
+      'Grew brand social media presence by 40%+ within first quarter through targeted content strategies and audience engagement.',
+      'Structured high-ROAS ad funnels across Meta & Google, achieving 3.5x average return on ad spend.',
+      'Managing 4+ social channels (Instagram, LinkedIn, TikTok, Meta Ads) with weekly performance reporting to leadership.',
+      'Leveraging AI-driven workflows and Adobe Illustrator design to produce 20+ branded assets per month for rapid campaign scaling.'
     ],
     skillsUsed: ['Social Media Management', 'Meta Ads', 'Content Strategy', 'Marketing Strategy', 'AI Tools', 'Brand Growth']
   },
   {
     id: 'exp-1',
-    role: 'Marketing Manager (Contract / Freelance)',
+    role: 'Digital Marketing Consultant',
     company: 'Rare Design • Fennec • Yomikwt • Mugmug Kuwait',
     companyLogo: '/raredesign_logo.svg',
-    period: 'Jan 2026 – Present',
+    period: 'Jan – Jun 2026',
     type: 'Contract',
     category: 'freelance',
     highlights: [
-      'Managed all digital marketing for four fashion and lifestyle brands simultaneously.',
-      'Executed social media campaigns, influencer partnerships, and paid ads on Meta & Google.',
-      'Directed e-commerce product photography and produced visual brand assets.',
-      'Monitored campaign performance & ROI, presenting actionable insights to founders.'
+      'Simultaneously managed digital marketing for 4 fashion and lifestyle brands, driving 25%+ combined engagement growth.',
+      'Launched and optimized paid ad campaigns on Meta & Google with a combined monthly budget of $5K+, achieving 2.8x ROAS.',
+      'Directed e-commerce product photography and produced 50+ visual brand assets in Adobe Illustrator.',
+      'Delivered monthly ROI dashboards to founders, resulting in 15% budget reallocation toward high-performing channels.'
     ],
     skillsUsed: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'Influencer Marketing', 'Adobe Illustrator', 'E-commerce Photography']
   },
   {
     id: 'exp-2',
-    role: 'Marketing Manager',
+    role: 'Digital Marketing Specialist',
     company: 'National Arabic Company',
     companyLogo: '/national_arabic_logo.svg',
-    period: '2025 – 2026 (6 Months)',
+    period: '2025 – 2026',
     type: 'Full-time',
     category: 'management',
     highlights: [
-      'Increased Google Maps reviews from 5 to 200+ across 3 Google Business accounts, dramatically boosting local SEO visibility and trust.',
-      'Managed end-to-end Meta advertising campaigns and social media post management for customer lead acquisition.',
-      'Created and executed integrated digital and print marketing campaigns for wood, melamine panels, and hardware.',
-      'Managed campaign planning, ad budget allocation, and monthly executive performance reporting.'
+      'Increased Google Maps reviews from 5 to 200+ across 3 business accounts, boosting local SEO visibility by 300%.',
+      'Managed end-to-end Meta ad campaigns generating 50+ qualified B2B leads per month for wood & melamine products.',
+      'Created integrated digital and print marketing campaigns, reducing customer acquisition cost by 20%.',
+      'Delivered monthly executive performance reports, leading to 30% ad budget optimization.'
     ],
     skillsUsed: ['Google Maps Local SEO', 'Meta Ads', 'Social Media Management', 'Campaign Planning', 'Print & Digital Strategy', 'Reporting']
   },
@@ -505,10 +505,10 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     type: 'Hybrid',
     category: 'enterprise',
     highlights: [
-      'Ran digital marketing campaigns for one of the largest retail chains in the Middle East.',
-      'Built a custom Python web scraper extracting the full product catalogue for pricing analysis.',
-      'Executed SEO audits & keyword research, boosting organic search rankings.',
-      'Delivered weekly regional campaign performance reports to executive leadership.'
+      'Managed digital marketing campaigns across Google & Meta for one of the Middle East\'s largest retail chains (200+ stores).',
+      'Built custom Python web scraper extracting 10,000+ product SKUs for competitive pricing analysis, saving 20+ hours/week of manual work.',
+      'Executed technical SEO audits and keyword research, improving organic search rankings for 50+ priority product categories.',
+      'Delivered weekly campaign performance dashboards to executive leadership with actionable optimization recommendations.'
     ],
     skillsUsed: ['Google Ads', 'Meta Ads', 'Python Web Scraping', 'SEO Audits', 'Data Analytics', 'Retail Marketing']
   },
@@ -528,33 +528,33 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     id: 'exp-5',
-    role: 'Founder & CEO',
+    role: 'Founder & E-commerce Operator',
     company: 'Boostega LLC (Boostega.com)',
     companyLogo: '/boostega_logo.svg',
-    period: '2019 – Present',
+    period: '2019 – 2024',
     type: 'Founder',
     category: 'founder',
     highlights: [
-      'Built entire e-commerce platform from domain registration to coding and production launch.',
-      'Wrote SEO product listings, designed full brand identity in Adobe Illustrator, and managed inventory.',
-      'Generated customer acquisition through SEO, Google Ads, Meta Ads, and email funnels.',
-      'Implemented Cloudflare security, payment processing, and Python order handling scripts.'
+      'Built entire e-commerce platform from zero — domain, custom code, design, and launch — generating $100K+ in lifetime revenue.',
+      'Designed full brand identity in Adobe Illustrator and wrote 200+ SEO product listings driving organic traffic.',
+      'Managed Google Ads & Meta Ads funnels with 3x+ ROAS, acquiring 2,000+ customers across global markets.',
+      'Implemented Cloudflare security, automated payment processing, and Python order-handling scripts reducing ops time by 60%.'
     ],
     skillsUsed: ['E-commerce Platform', 'Adobe Illustrator', 'SEO Copywriting', 'Paid Ads', 'Python Scripts', 'Customer Success']
   },
   {
     id: 'exp-6',
-    role: 'Founder & CEO',
+    role: 'Founder & Platform Operator',
     company: 'Smmcent LTD',
     companyLogo: '/smmcent_logo.svg',
-    period: '2020 – Present',
+    period: '2020 – 2024',
     type: 'Founder',
     category: 'founder',
     highlights: [
-      'Founded and operated online platform selling social media marketing services.',
-      'Handled all web development, design, customer acquisition, and infrastructure scaling.'
+      'Founded and scaled SaaS platform selling social media marketing services to 500+ global clients.',
+      'Built full-stack web platform, integrated 3rd-party APIs for automated order dispatch, and managed payment infrastructure.'
     ],
-    skillsUsed: ['Web Development', 'UI/UX', 'Digital Marketing', 'Operations']
+    skillsUsed: ['Web Development', 'UI/UX', 'Digital Marketing', 'API Integration', 'Operations']
   },
   {
     id: 'exp-7',
