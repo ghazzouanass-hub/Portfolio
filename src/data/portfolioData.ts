@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
   name: "Anass Ghazzou",
   title: "Digital Marketing Specialist & E-commerce Entrepreneur",
   subtitle: "Growth Strategist • Paid Media Specialist • Automation Developer • UI/UX Designer",
-  summary: "Digital Marketing Specialist with 7+ years driving measurable growth across SEO, paid media (Google & Meta), and e-commerce. Built two profitable online businesses from zero, grew Google Maps reviews 5→200+ for a regional brand, managed multi-channel ad campaigns at Lulu Hypermarket Kuwait, and currently leading social media strategy at MAK United W.L.L.",
+  summary: "Digital Marketing Specialist with 7+ years driving measurable growth across SEO, paid media (Google & Meta), and e-commerce. Managed 5-figure monthly Meta Ads budgets, built two profitable online businesses from zero, grew Google Maps reviews 7→200+ for a regional brand, and currently delivering marketing strategy for MAK United & Varsity.",
   bioShort: "7+ years combining data-driven digital marketing, hands-on e-commerce execution, custom web scraping & automation, and graphic design across Middle East & global markets.",
   avatarUrl: "/avatar.webp", // High quality executive portrait photo
   location: "Kuwait / Morocco / Middle East",
@@ -474,7 +474,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     category: 'freelance',
     highlights: [
       'Managed digital marketing for 4 fashion brands simultaneously — drove Yomikwt to complete sold-out status.',
-      'Increased Rare Design ROI by more than 4x through optimized Meta & Google ad funnels and audience targeting.',
+      'Managed 5-figure monthly Meta Ads budgets across all 4 brands — increased Rare Design ROI by more than 4x through optimized funnels and audience targeting.',
       'Set up and launched paid ad campaigns for Rare Design and Fennec from scratch, building full campaign structures.',
       'Fully set up and optimized Google My Business (GMB) profiles for Rare Design and Fennec, boosting local discovery.'
     ],
