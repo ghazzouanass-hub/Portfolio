@@ -503,7 +503,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company: 'Lulu Hypermarket - Kuwait Regional Office',
     companyLogo: '/lulu_logo.svg',
     period: '2024 – 2025',
-    type: 'Hybrid',
+    type: 'Contract',
     category: 'enterprise',
     highlights: [
       'Built custom Python web scraper extracting 100,000+ product SKUs for competitive pricing analysis across the full Lulu catalogue.',
